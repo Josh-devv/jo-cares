@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { imgCaro } from "@/imgCaro";
-import Caro from "@/Caro";
+import { imgCaro } from "@/components/imgCaro";
+import Caro from "@/components/Caro";
 import { useEffect } from "react";
 
 
