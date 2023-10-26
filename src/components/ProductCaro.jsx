@@ -6,13 +6,13 @@ const ProdCaro = ({ children }) => {
     <Carousel
       additionalTransfrom={0}
       autoPlaySpeed={8000}
-      arrows={false}
+      arrows={true}
       centerMode={false}
-      className="h-screen mx-auto p-0"
+      className=""
       containerClass=""
       dotListClass=""
       draggable
-      autoPlay
+      autoPlay={false}
       focusOnSelect={false}
       infinite
       itemClass=""
@@ -25,21 +25,21 @@ const ProdCaro = ({ children }) => {
             max: 3000,
             min: 1024,
           },
-          items: 1,
+          items: 4,
         },
         tablet: {
           breakpoint: {
             max: 1024,
             min: 464,
           },
-          items: 1,
+          items: 3,
         },
         mobile: {
           breakpoint: {
             max: 464,
             min: 0,
           },
-          items: 1,
+          items: 2,
         },
       }}
       renderArrowsWhenDisabled={false}
@@ -49,7 +49,7 @@ const ProdCaro = ({ children }) => {
       rewindWithAnimation={false}
       rtl={false}
       shouldResetAutoplay
-      showDots
+      showDots={false}
       sliderClass=""
       slidesToSlide={1}
       swipeable

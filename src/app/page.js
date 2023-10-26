@@ -17,49 +17,47 @@ export default function Home() {
       <Navbar />
       <Homep />
 
-      <div className="h-[50vh] flex justify-center">
-        <div className='flex text-center justify-evenly'>
-          <div className="w-1/5 flex flex-col justify-center items-center">
+      <div className="flex justify-center ">
+        <div className='h-[35vh] max-lg:h-[25vh] max-md:h-[20vh] max-sm:h-[50vh] flex text-center justify-evenly max-sm:flex max-sm:flex-wrap max-sm:py-10'>
+          <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full">
             <p><AiOutlineBook className='text-[30px] text-center text-red-300'/></p>
-            <h1 className='text-[30px]'>Book An Appointment</h1>
-            <p className="text-slate-500">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+            <h1 className='text-[2vw] max-sm:text-[4vw] '>Book Appointment</h1>
+            <p className="text-slate-500 max-md:text-[13px]">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
           </div>
-          <div className="w-1/5 flex flex-col justify-center items-center">
+          <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full">
             <p><BsHandbag className='text-[30px] text-center text-red-300'/></p>
-            <h1 className='text-[30px]'>Pick Up in A Store</h1>
-            <p className="text-slate-500">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+            <h1 className='text-[2vw] max-sm:text-[4vw]'>Pick Up in A Store</h1>
+            <p className="text-slate-500 max-md:text-[13px]">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
             </div>
-          <div className="w-1/5 flex flex-col justify-center items-center">
+          <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full">
             <p><AiOutlineGift className='text-[30px] text-center text-red-300'/></p>
-            <h1 className='text-[30px]'>Special Packaging</h1>
-            <p className="text-slate-500">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+            <h1 className='text-[2vw] max-sm:text-[4vw]'>Special Packaging</h1>
+            <p className="text-slate-500 max-md:text-[13px]">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
             </div>
-          <div className="w-1/5 flex flex-col justify-center items-center">
+          <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full">
             <p><HiOutlineRefresh className='text-[30px] text-center text-red-300'/></p>
-            <h1 className='text-[30px]'>Free global return</h1>
-            <p className="text-slate-500">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+            <h1 className='text-[2vw] max-sm:text-[4vw]'>Free global return</h1>
+            <p className="text-slate-500 max-md:text-[13px]">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
             </div>
         </div>
       </div>
 
-      <div>
-        <div>
-          <h1>NEW ARRIVALS</h1>
-          <div className="w-11/12 flex">
+      <div className="">
+        <div className="flex justify-center flex-col items-center">
+          <h1 className="text-[30px]">NEW ARRIVALS</h1>
+          <div className="w-11/12 pt-4">
             <ProdCaro >
                {
                 prod.map(product =>(
-                  <div className="" key={product.id}>
-                    <div  className="">
-                    
-                    <div>
-                      <h1 className="text-[20px]" style={{fontFamily: 'ptserifr'}}>{product.title}</h1>
-                      <p>
-                        {product.price}</p>
+                  <div className="flex justify-evenly" key={product.id}>
+                    <div  className="w-10/12">
+                      <Image src={product.img} />
+                      <div>
+                        <h1 className="text-[20px]" style={{fontFamily: 'ptserifr'}}>{product.title}</h1>
+                        <p>{product.price}</p>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                  
               ))}
             </ProdCaro>
            

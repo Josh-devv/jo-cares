@@ -2,6 +2,12 @@ import b1 from "@/Assets/banner-large-image1.png"
 import b2 from "@/Assets/banner-large-image2.jpg"
 import b3 from "@/Assets/banner-large-image.png"
 import p1 from "@/Assets/product-item1.jpg"
+import p2 from "@/Assets/product-item7.jpg"
+import p3 from "@/Assets/product-item2.jpg"
+import p4 from "@/Assets/product-item3.jpg"
+import p5 from "@/Assets/product-item4.jpg"
+import p6 from "@/Assets/product-item5.jpg"
+import p7 from "@/Assets/product-item6.jpg"
 
 import { AiOutlineBook } from "react-icons/ai";
 import { BsHandbag} from "react-icons/bs";
@@ -75,43 +81,43 @@ export const prod =  [
     },
     {
         id:2,
-        img: p1,
+        img: p2,
         title: "NATURAL GLOW",
         price: "$95.00"
     },
     {
         id:3,
-        img: p1,
+        img: p3,
         title: "NATURAL GLOW",
         price: "$95.00"
     },
     {
         id:4,
-        img: p1,
+        img: p4,
         title: "NATURAL GLOW",
         price: "$95.00"
     },
     {
         id:5,
-        img: p1,
+        img: p5,
         title: "NATURAL GLOW",
         price: "$95.00"
     },
     {
         id:6,
-        img: p1,
+        img: p6,
         title: "NATURAL GLOW",
         price: "$95.00"
     },
     {
         id:7,
-        img: p1,
+        img: p7,
         title: "NATURAL GLOW",
         price: "$95.00"
     },
     {
         id:8,
-        img: p1,
+        img: p3,
         title: "NATURAL GLOW",
         price: "$95.00"
     }
