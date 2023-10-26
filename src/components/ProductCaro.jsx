@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css'
-const Caro = ({ children }) => {
+const ProdCaro = ({ children }) => {
   return (
     
     <Carousel
@@ -49,7 +49,7 @@ const Caro = ({ children }) => {
       rewindWithAnimation={false}
       rtl={false}
       shouldResetAutoplay
-      showDots={false}
+      showDots
       sliderClass=""
       slidesToSlide={1}
       swipeable
@@ -59,4 +59,4 @@ const Caro = ({ children }) => {
   );
 };
 
-export default Caro;
+export default ProdCaro;

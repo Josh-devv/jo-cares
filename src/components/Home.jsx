@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { imgCaro } from "@/components/imgCaro";
 import Caro from "@/components/Caro";
-import { useEffect } from "react";
-
 
 function Home() {
   return (
@@ -10,7 +8,7 @@ function Home() {
       <Caro>
         {imgCaro.map((imggs) => (
           <div key={imggs.id} className="relative" id={`img${imggs.id}`}>
-            <Image className="w-screen h-screen obj relative"  src={imggs.image} />  
+            <Image className="w-screen h-screen obj relative"  alt="" src={imggs.image} />  
             <div style={{transform: 'translate(-50%, -50%)'}} className="max-md:top-[50%] animate-slideIn  transition-opacity duration-300 ease-in-out absolute flex flex-col justify-center items-center top-[60%] text-white w-screen left-1/2 mx-auto text-center">
               <h1 className="text-[80px] max-sm:text-[33px]" style={{fontFamily: 'ptserifr'}}>{imggs.head}</h1>
               <p className="w-1/2 max-lg:w-10/12 max-sm:text-[13px]" style={{fontFamily: 'ptserifr'}}>{imggs.title}</p>
@@ -20,7 +18,7 @@ function Home() {
           </div>
         ))}
       </Caro> 
-</>
+  </>
   );
 }
 

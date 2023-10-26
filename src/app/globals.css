@@ -16,6 +16,7 @@
   }
 }
 
+/*
 body {
   color: rgb(var(--foreground-rgb));
   overflow-x: hidden;
@@ -27,7 +28,7 @@ body {
     rgb(var(--background-start-rgb));
 
 }
-
+*/
 .types{
   animation: open .2s ease-out forwards;
   width: 100%;

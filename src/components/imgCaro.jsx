@@ -1,6 +1,8 @@
 import b1 from "@/Assets/banner-large-image1.png"
 import b2 from "@/Assets/banner-large-image2.jpg"
 import b3 from "@/Assets/banner-large-image.png"
+import p1 from "@/Assets/product-item1.jpg"
+
 import { AiOutlineBook } from "react-icons/ai";
 import { BsHandbag} from "react-icons/bs";
 import { GoGift} from "react-icons/go";
@@ -63,4 +65,55 @@ export const data2 =[
     },
 ]
 
+
+export const prod =  [
+    {
+        id:1,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:2,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:3,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:4,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:5,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:6,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:7,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:8,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    }
+]
 
