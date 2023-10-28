@@ -7,6 +7,11 @@ import { BsHandbag } from 'react-icons/bs'
 import { HiOutlineRefresh } from 'react-icons/hi'
 import { prod } from '@/components/imgCaro'
 import ProdCaro from "@/components/ProductCaro";
+import NewArrivals from "@/components/NewArrivals";
+import BestSellers from "@/components/BestSellers";
+import cat1 from "@/Assets/cat-large-item1.jpg"
+import cat2 from "@/Assets/cat-large-item2.jpg"
+import cat3 from "@/Assets/cat-large-item3.jpg"
 
 
 
@@ -17,7 +22,7 @@ export default function Home() {
       <Navbar />
       <Homep />
 
-      <div className="flex justify-center ">
+    <div className="flex justify-center ">
         <div className='h-[40vh] max-lg:h-[30vh] max-md:h-[40vh] max-sm:h-[50vh] flex text-center justify-evenly max-sm:grid max-sm:grid-cols-2 max-sm:py-10'>
           <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full max-sm:py-">
             <p><AiOutlineBook className='text-[30px] text-center text-red-300'/></p>
@@ -40,31 +45,67 @@ export default function Home() {
             <p className="text-slate-500 max-md:text-[13px] max-sm:w-11/12 ">At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
             </div>
         </div>
-      </div>
+    </div>
 
-      <div className="">
+    <div className="">
         <div className="flex justify-center flex-col items-center">
           <h1 className="text-[30px] max-sm:text-[20px]" style={{fontFamily: "itl"}}>NEW ARRIVALS</h1>
           <div className="w-11/12 pt-4">
+
             <ProdCaro >
                {
                 prod.map(product =>(
-                  <div className="flex justify-evenly" key={product.id}>
-                    <div  className="w-10/12">
-                      <Image src={product.img} className="rounded-md"/>
-                      <div>
-                        <h1 className="text-[20px] max-sm:text-[10px]" style={{fontFamily: 'ptserifr'}}>{product.title}</h1>
-                        <p className="max-sm:text-[10px]">{product.price}</p>
-                      </div>
-                    </div>
-                  </div>
+                  <NewArrivals product={product} />
               ))}
             </ProdCaro>
            
           </div>
+          <h1 className="py-5 font-medium">VIEW ALL PRODUCTS</h1>
+
+          <h1 className="text-[30px] max-sm:text-[20px] pt-14" style={{fontFamily: "itl"}}>BEST SELLERS</h1>
+          <div className="w-11/12 pt-4">
+
+            <ProdCaro >
+               {
+                prod.map(product =>(
+                  <BestSellers product={product} />
+              ))}
+            </ProdCaro>
+           
+          </div>
+          <h1 className="py-5 font-medium">VIEW ALL PRODUCTS</h1>
+        </div>
+    </div>
+
+    <div className=" text-white">
+
+      <div className="grid grid-cols-2 ">
+        <div className="">
+          <Image src={cat1} className="w-1/2 absolute"/>
+          <div className="flex justify-center items-center">
+             <div className="flex top z-10 absolute border border-white-500">
+              <h1>SKIN CARE</h1>
+              <button>SHOP NOW</button>
+            </div>
+          </div>
+           
+          
+        </div>
+
+        <div className="">
+          <div>
+            <Image src={cat2} />
+            <div></div>
+          </div>
+          <div>
+            <Image src={cat3} />
+            <div></div>
+          </div>
         </div>
       </div>
 
+    </div>
+        
     </div>
   )
 }

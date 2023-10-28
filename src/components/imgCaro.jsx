@@ -72,6 +72,56 @@ export const data2 =[
 ]
 
 
+export const prod2 =  [
+    {
+        id:1,
+        img: p1,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:2,
+        img: p2,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:3,
+        img: p3,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:4,
+        img: p4,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:5,
+        img: p5,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:6,
+        img: p6,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:7,
+        img: p7,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    },
+    {
+        id:8,
+        img: p3,
+        title: "NATURAL GLOW",
+        price: "$95.00"
+    }
+]
 export const prod =  [
     {
         id:1,
