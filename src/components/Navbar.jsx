@@ -30,7 +30,7 @@ function Navbar() {
 
   return (
     <>
-      <section className="h-20 fixed w-screen z-100 text-black bg-red-50 px-10 flex items-center justify-center max-[380]:px-5 z-10">
+      <section className="h-20 fixed w-screen z-100 text-black shadow bg-red-50 px-10 flex items-center justify-center max-[380]:px-5 z-10">
         <div className="mr-auto">
           <Image src={main} alt="" width={100} height={100} />
         </div>
@@ -66,14 +66,14 @@ function Navbar() {
         </ul>
 
         <div className={menu ? `types absolute right-0 top-0 z-10` : ''}>
-          <ul className="bg-red-50 top-0 absolute h-screen right-[-100%] w-10/12 pt-7 pl-20 flex-column max-sm:w-screen max-sm:pl-10">
-            <ul className="flex justify-between pb-20 pt-0">
+          <ul className="bg-red-50 top-0 absolute h-screen shadow-lg right-[-100%] w-10/12 pt-7 pl-20 flex-column max-sm:w-screen max-sm:pl-10">
+            <ul className="flex justify-between pt-0">
               <li className="text-2xl">MENU</li>
               <li className="pr-10 cursor-pointer">
                 <AiOutlineClose size={25} onClick={handleClick} />
               </li>
             </ul>
-            <li className="flex items-center text-lg py-3">
+            <li className="flex items-center text-lg py-3 pt-16">
               HOME
               <FaCaretDown />
             </li>
@@ -84,20 +84,14 @@ function Navbar() {
             <li className="flex text-lg  py-3">CONTACT</li>
             <li className="flex text-lg  py-3">
               WISHLIST
-              <AiOutlineHeart size={25} />
-              (0)
             </li>
             <li className="flex text-lg  py-3">
               ADD TO CART
-              <AiOutlineShoppingCart size={25} />
-              (0)
             </li>
             <li className="flex text-lg  py-3">
               PROFILE
-              <AiOutlineUser size={25} />
             </li>
             <li className="flex text-lg  py-3">
-              SEARCH
               <FiSearch size={22} />
             </li>
           </ul>

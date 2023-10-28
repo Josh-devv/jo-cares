@@ -30,6 +30,7 @@ body {
 }
 */
 .types{
+  
   animation: open .2s ease-out forwards;
   width: 100%;
 }
