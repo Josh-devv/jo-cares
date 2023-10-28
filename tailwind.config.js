@@ -13,7 +13,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily:{
-        'itl': ''
+        'itl': ['C:\Users\JOSHUA\Desktop\jo-cares\jo-cares\src\Assets\static']
       }
     },
   },

@@ -44,7 +44,7 @@ export default function Home() {
 
       <div className="">
         <div className="flex justify-center flex-col items-center">
-          <h1 className="text-[30px] max-sm:text-[20px]">NEW ARRIVALS</h1>
+          <h1 className="text-[30px] max-sm:text-[20px]" style={{fontFamily: "itl"}}>NEW ARRIVALS</h1>
           <div className="w-11/12 pt-4">
             <ProdCaro >
                {
