@@ -77,35 +77,47 @@ export default function Home() {
         </div>
     </div>
 
-    <div className=" text-white">
+    <div className="grid grid-cols-2 max-sm:grid-cols-1 text-white">
 
-      <div className="grid grid-cols-2 ">
+        <div className="relative w-full">
+          <Image src={cat1} className="w-full max-sm:w-half"/>
+          <div className="absolute top-1/3 w-3/4 max-lg:w-3/4">
+              <div className="  z-10 border-4  max-lg:border-2 border-l-0 border-white px-6 py-8">
+               <h1 className="text-[3.5vw] w-1/2 max-lg:text-[2.5vw] max-sm:text-[5vw]"> SKIN CARE</h1>
+               <button className="border-white-500 border bg-none text-[1.2vw] p-2 max-md:text-[1.8vw]">SHOP NOW</button>
+              </div>
+            </div>
+        </div>
+
+        
         <div className="">
-          <Image src={cat1} className="w-1/2 absolute"/>
-          <div className="flex justify-center items-center">
-             <div className="flex top z-10 absolute border border-white-500">
-              <h1>SKIN CARE</h1>
-              <button>SHOP NOW</button>
+          <div className="relative">
+            <Image src={cat2} className="w-full"/>
+            <div className="absolute top-0 w-3/4">
+              <div className="  z-10 border-4 max-lg:border-2 border-t-0 border-white  px-6 py-8 max-md:py-3 max-sm:py-5">
+               <h1 className="text-[3.5vw] w-1/2 max-lg:text-[2.5vw] max-sm:text-[5vw]">MAKE-UP PRODUCTS</h1>
+               <button className="border-white-500 border bg-none text-[1.2vw] p-2 max-md:text-[1.8vw]">SHOP NOW</button>
+              </div>
             </div>
           </div>
-           
-          
+
+          <div className="relative">
+            <Image src={cat3} className="w-full absolute"/>
+            <div className="absolute w-3/4">
+              <div className="  z-10 border-4  max-lg:border-2 border-t-0 border-white  px-6 py-8 max-md:py-3 max-sm:py-5">
+               <h1 className="text-[3.5vw] w-1/2 max-lg:text-[2.5vw] max-sm:text-[5vw]">BEAUTY PRODUCTS</h1>
+               <button className="border-white-500 border bg-none text-[1.2vw] p-2 max-md:text-[1.8vw]">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div className="">
-          <div>
-            <Image src={cat2} />
-            <div></div>
-          </div>
-          <div>
-            <Image src={cat3} />
-            <div></div>
-          </div>
-        </div>
+        
       </div>
 
     </div>
         
-    </div>
+   
   )
 }
