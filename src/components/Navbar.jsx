@@ -30,7 +30,7 @@ function Navbar() {
 
   return (
     <>
-      <section className="h-20 fixed w-screen z-100 text-black shadow bg-red-50 px-10 flex items-center justify-center max-[380]:px-5 z-10">
+      <section className="h-20 fixed w-screen z-50 text-black shadow bg-red-50 px-10 flex items-center justify-center max-[380]:px-5">
         <div className="mr-auto">
           <Image src={main} alt="" width={100} height={100} />
         </div>

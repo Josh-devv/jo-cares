@@ -8,7 +8,7 @@ const ProdCaro = ({ children }) => {
       autoPlaySpeed={8000}
       arrows={true}
       centerMode={false}
-      className=""
+      className="z-10"
       containerClass=""
       dotListClass=""
       draggable
@@ -52,7 +52,7 @@ const ProdCaro = ({ children }) => {
       showDots={false}
       sliderClass=""
       slidesToSlide={1}
-      swipeable
+      swipeable={"true"}
     >
       {children}
     </Carousel>
