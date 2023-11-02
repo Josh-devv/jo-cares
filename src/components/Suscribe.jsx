@@ -8,7 +8,7 @@ export default function Suscribe(){
       <>
        <div className="flex-col h-[40vw] relative max-sm:h-[100vw] flex justify-start items-start max-sm:justify-center max-sm:items-center ">
         <div className="flex justify-center absolute items-center">
-          <Image src={news} className=" max-sm:h-[25vw]"/>
+          <Image src={news} className=" max-sm:h-[35vw]"/>
           <div className="z-10 absolute flex flex-col w-full justify-center items-center">
             <h1 className="text-[2.5vw]">SIGN UP FOR OUR NEWSLETTER</h1>
             <input type="text" placeholder="Your Email Address" className="w-1/2 max-sm:text-[1.6vw] p-3 max-md:p-2.5 max-sm:p-1 rounded-3xl"/>
