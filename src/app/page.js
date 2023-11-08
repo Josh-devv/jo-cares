@@ -21,7 +21,7 @@ export default function Home() {
   console.log(prod);
   return (
     <div
-      className=" text-black bg-red-50"
+      className=" text-black "
       style={{ fontFamily: "ptserifr", backgroundColor: "" }}
     >
       <Navbar />

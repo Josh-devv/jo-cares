@@ -1,13 +1,11 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import main from "../Assets/main-logo.png";
-import {
-  AiOutlineHeart,
-  AiOutlineShoppingCart,
-  AiOutlineUser,
-  AiOutlineClose,
-} from "react-icons/ai";
+import logo from "../Assets/Logo.svg";
+import shhop from "../Assets/shhop.svg";
+import Search from "../Assets/Search.svg";
+import men from "../Assets/Menu.svg";
+import { AiOutlineHeart, AiOutlineUser, AiOutlineClose } from "react-icons/ai";
 import { FiSearch } from "react-icons/fi";
 import { FaCaretDown } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -17,7 +15,6 @@ function Navbar() {
 
   const handleClick = () => {
     setMenu(!menu);
-    console.log("gggs");
   };
 
   useEffect(() => {{
@@ -30,11 +27,11 @@ function Navbar() {
 
   return (
     <>
-      <section className="h-20 fixed w-screen z-50 text-black shadow bg-red-50 px-10 flex items-center justify-center max-[380]:px-5">
+      <section className="h-[10vh] fixed w-screen z-50 bg-blue-50 text-black shadow px-10 flex items-center justify-center max-[380]:px-5">
         <div className="mr-auto">
-          <Image src={main} alt="" width={100} height={100} />
+          <Image src={logo} alt="" width={120} height={120} />
         </div>
-        <ul className="flex justify-evenly font-custom gap-12 text-lg font-serif text-bold gap-md-5 max-lg:hidden">
+        <ul className="flex justify-evenly font-custom gap-12 text-lg text-bold gap-md-5 max-lg:hidden">
           <li className="flex items-center">
             HOME
             <FaCaretDown />
@@ -46,7 +43,7 @@ function Navbar() {
           <li className="flex">CONTACT</li>
         </ul>
         <div className="hidden max-lg:block ml-auto cursor-pointer">
-          <RxHamburgerMenu size={25} onClick={handleClick} />
+        <Image src={men} alt=""  />
         </div>
         <ul className="flex ml-auto justify-between items-center font-sans gap-10 max-md:hidden max-lg:ml-0 pl-5">
           <li className="flex text-lg">
@@ -54,14 +51,14 @@ function Navbar() {
             (0)
           </li>
           <li className="flex text-lg">
-            <AiOutlineShoppingCart size={25} />
+          <Image src={shhop} alt=""  />
             (0)
           </li>
           <li className="flex text-lg">
             <AiOutlineUser size={25} />
           </li>
           <li className="flex text">
-            <FiSearch size={22} />
+          <Image src={Search} alt=""  />
           </li>
         </ul>
 

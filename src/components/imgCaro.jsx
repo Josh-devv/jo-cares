@@ -1,6 +1,6 @@
 import b1 from "@/Assets/banner-large-image1.png"
 import b2 from "@/Assets/banner-large-image2.jpg"
-import b3 from "@/Assets/banner-large-image.png"
+import b3 from "@/Assets/last.jpeg"
 import p1 from "@/Assets/product-item1.jpg"
 import p2 from "@/Assets/product-item7.jpg"
 import p3 from "@/Assets/product-item2.jpg"
@@ -19,19 +19,19 @@ export const imgCaro =[
     {
         image: b3,
         id: 1,
-        head: "SUMMER GLOW",
-        shop: "SHOP COLLECTION",
+        head: "LUXURY FAST & ACCESSORIES",
+        shop: "EXPLORE COLLECTION",
         title: "Tortor eget placerat arcu integer. Lectus fames egestas tincidunt aliquet vivamus nibh lorem nulla. This is Modern fashion ectus fames egestas tncidunt aliquet vivamus nibh lorem nulla."
     },
     {
-        image: b1,
+        image: b3,
         id: 2,
         head: "SUMMER GLOW",
         shop: "SHOP COLLECTION",
         title: "Tortor eget placerat arcu integer. Lectus fames egestas tincidunt aliquet vivamus nibh lorem nulla. This is Modern fashion ectus fames egestas tncidunt aliquet vivamus nibh lorem nulla."
     },
     {
-        image: b2,
+        image: b1,
         id: 3,
         head: "SUMMER GLOW",
         shop: "SHOP COLLECTION",

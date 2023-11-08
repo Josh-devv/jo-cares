@@ -6,14 +6,14 @@ const Caro = ({ children }) => {
     
     <Carousel
       additionalTransfrom={0}
-      autoPlaySpeed={8000}
+      autoPlaySpeed
       arrows={false}
       centerMode={false}
       className="h-screen mx-auto p-0"
       containerClass=""
       dotListClass=""
       draggable
-      autoPlay
+      autoPlay={false}
       focusOnSelect={false}
       infinite
       itemClass=""
