@@ -9,8 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         custom: ['Abril Fatface', 'sans-serif'],
-        rbt: ['Roboto', 'serif']
+        rbt: ['Tenor Sans','sans-serif'],
+        
       },
+      
     },
   },
 }

@@ -13,6 +13,8 @@ import cat1 from "@/Assets/cat-large-item1.jpg"
 import cat2 from "@/Assets/cat-large-item2.jpg"
 import cat3 from "@/Assets/cat-large-item3.jpg"
 import col from "@/Assets/collection-banner.jpg"
+import arr from "@/Assets/c3.svg"
+
 import Suscribe from "@/components/Suscribe";
 
 
@@ -27,58 +29,22 @@ export default function Home() {
       <Navbar />
       <Homep />
 
-      <div className="flex justify-center ">
-        <div className="h-[40vh] max-lg:h-[30vh] max-md:h-[40vh] max-sm:h-[50vh] flex text-center justify-evenly max-sm:grid max-sm:grid-cols-2 max-sm:py-10">
-          <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full max-sm:py-">
-            <p>
-              <AiOutlineBook className="text-[30px] text-center text-red-300" />
-            </p>
-            <h1 className="text-[2vw] max-sm:text-[5vw] ">Book Appointment</h1>
-            <p className="text-slate-500 max-md:text-[13px] max-sm:pb-7 max-sm:w-11/12">
-              At imperdiet dui accumsan sit amet nulla risus est ultricies quis.
-            </p>
-          </div>
-
-          <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full  max-sm:py-">
-            <p>
-              <BsHandbag className="text-[30px] text-center text-red-300" />
-            </p>
-            <h1 className="text-[2vw] max-sm:text-[5vw]">Pick Up in A Store</h1>
-            <p className="text-slate-500 max-md:text-[13px] max-sm:pb-7  max-sm:w-11/12">
-              At imperdiet dui accumsan sit amet nulla risus est ultricies quis.
-            </p>
-          </div>
-
-          <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full  max-sm:py-">
-            <p>
-              <AiOutlineGift className="text-[30px] text-center text-red-300" />
-            </p>
-            <h1 className="text-[2vw] max-sm:text-[5vw]">Special Packaging</h1>
-            <p className="text-slate-500 max-md:text-[13px] max-sm:w-11/12">
-              At imperdiet dui accumsan sit amet nulla risus est ultricies quis.
-            </p>
-          </div>
-
-          <div className="w-1/5 flex flex-col justify-center items-center max-sm:w-full max-sm:py-">
-            <p>
-              <HiOutlineRefresh className="text-[30px] text-center text-red-300" />
-            </p>
-            <h1 className="text-[2vw] max-sm:text-[5vw]">Free global return</h1>
-            <p className="text-slate-500 max-md:text-[13px] max-sm:w-11/12 ">
-              At imperdiet dui accumsan sit amet nulla risus est ultricies quis.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="">
+      <div className=" pt-16">
         <div className="flex justify-center flex-col items-center">
-          <h1
-            className="text-[30px] max-sm:text-[20px]"
-            style={{ fontFamily: "itl" }}
-          >
-            NEW ARRIVALS
-          </h1>
+          <h1 className="text-[30px] max-sm:text-[20px] font-rbt space-x-7 leading-4 h-[32px]">NEW ARRIVALS</h1>
+          <div>
+            <Image src={arr}  className="w-[200px]"/>
+          </div>
+          <div className="font-rbt w-full pt-5">
+            <div className="flex text-[25px] w-full justify-evenly items-center">
+              <p>All</p>
+              <p>Apparel</p>
+              <p>Dress</p>
+              <p>Tshirt</p>
+              <p>Bag</p>
+            </div>
+          </div>
+
           <div className="w-11/12 pt-4">
             <ProdCaro>
               {prod.map((product) => (

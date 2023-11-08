@@ -6,7 +6,7 @@ const ProdCaro = ({ children }) => {
     <Carousel
       additionalTransfrom={0}
       autoPlaySpeed={8000}
-      arrows={true}
+      arrows={false}
       centerMode={false}
       className="z-10"
       containerClass=""
