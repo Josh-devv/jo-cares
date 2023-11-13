@@ -1,0 +1,77 @@
+{
+    "iphones": [
+      {
+        "model": "iPhone X",
+        "release_year": 2017,
+        "display_size": 5.8,
+        "storage_options": [64, 256],
+        "color_options": ["Space Gray", "Silver"],
+        "prices": {"64GB": 799, "256GB": 949},
+        "image_url": "https://example.com/iphone-x-image.jpg"
+      },
+      {
+        "model": "iPhone XS",
+        "release_year": 2018,
+        "display_size": 5.8,
+        "storage_options": [64, 256, 512],
+        "color_options": ["Space Gray", "Silver", "Gold"],
+        "prices": {"64GB": 999, "256GB": 1149, "512GB": 1349},
+        "image_url": "https://example.com/iphone-xs-image.jpg"
+      },
+      {
+        "model": "iPhone XR",
+        "release_year": 2018,
+        "display_size": 6.1,
+        "storage_options": [64, 128, 256],
+        "color_options": ["Black", "White", "Blue", "Yellow", "Coral", "Product(RED)"],
+        "prices": {"64GB": 749, "128GB": 799, "256GB": 899},
+        "image_url": "https://example.com/iphone-xr-image.jpg"
+      },
+      {
+        "model": "iPhone 11",
+        "release_year": 2019,
+        "display_size": 6.1,
+        "storage_options": [64, 128, 256],
+        "color_options": ["Black", "Green", "Yellow", "Purple", "Red", "White"],
+        "prices": {"64GB": 699, "128GB": 749, "256GB": 849},
+        "image_url": "https://example.com/iphone-11-image.jpg"
+      },
+      {
+        "model": "iPhone 12",
+        "release_year": 2020,
+        "display_size": 6.1,
+        "storage_options": [64, 128, 256],
+        "color_options": ["Black", "Blue", "Green", "Red", "White"],
+        "prices": {"64GB": 799, "128GB": 849, "256GB": 949},
+        "image_url": "https://example.com/iphone-12-image.jpg"
+      },
+      {
+        "model": "iPhone 13",
+        "release_year": 2021,
+        "display_size": 6.1,
+        "storage_options": [128, 256, 512],
+        "color_options": ["Pink", "Blue", "Midnight", "Starlight", "Product(RED)"],
+        "prices": {"128GB": 799, "256GB": 899, "512GB": 1099},
+        "image_url": "https://example.com/iphone-13-image.jpg"
+      },
+      {
+        "model": "iPhone 14",
+        "release_year": 2022,
+        "display_size": 6.1,
+        "storage_options": [128, 256, 512],
+        "color_options": ["Graphite", "Gold", "Silver", "Sunset"],
+        "prices": {"128GB": 899, "256GB": 999, "512GB": 1199},
+        "image_url": "https://example.com/iphone-14-image.jpg"
+      },
+      {
+        "model": "iPhone 15",
+        "release_year": 2023,
+        "display_size": 6.2,
+        "storage_options": [128, 256, 512],
+        "color_options": ["Ocean Blue", "Rose Gold", "Space Gray", "Sunset"],
+        "prices": {"128GB": 999, "256GB": 1099, "512GB": 1299},
+        "image_url": "https://example.com/iphone-15-image.jpg"
+      }
+    ]
+  }
+  

@@ -18,6 +18,7 @@ import arr from "@/Assets/c3.svg"
 import Suscribe from "@/components/Suscribe";
 
 import { useEffect, useState } from "react";
+import Products from "@/components/Products";
 
 
 export default function Home() {
@@ -38,7 +39,7 @@ export default function Home() {
         const response = await fetch(url, options);
         const result = await response.json();
         setAll(result.products)
-        console.log(result.products[0].imageUrl);
+        console.log(result);
       } catch (error) {
         console.error(error);
       }
@@ -49,13 +50,10 @@ export default function Home() {
 
 
   return (
-    <div
-      className=" text-black "
-      style={{ fontFamily: "ptserifr", backgroundColor: "" }}
-    >
+    <div className=" text-black" style={{ fontFamily: "ptserifr", backgroundColor: "" }}>
       <Navbar />
       <Homep />
-
+      
       <div className=" pt-16">
         <div className="flex justify-center flex-col items-center">
           <h1 className="text-[30px] max-sm:text-[20px] font-rbt space-x-7 leading-4 h-[32px]">NEW ARRIVALS</h1>
@@ -63,7 +61,7 @@ export default function Home() {
             <Image src={arr}  className="w-[200px]"/>
           </div>
           <div className="font-rbt w-full pt-5">
-            <div className="flex text-[25px] w-full justify-evenly items-center">
+            <div className="flex text-[25px] max-sm:text-[3.2vw] w-full justify-evenly items-center">
               <p>All</p>
               <p>Apparel</p>
               <p>Dress</p>
@@ -74,21 +72,14 @@ export default function Home() {
 
           <div className="w-11/12 pt-4">
             <ProdCaro>
-              {all.map((product) => (
-                <NewArrivals product={product} />
+              {prod.map((product) => (
+                <BestSellers product={product} />
               ))}
             </ProdCaro>
           </div>
-          <h1 className="py-5 font-medium  max-sm:text-[12px]">
-            VIEW ALL PRODUCTS
-          </h1>
+          <h1 className="py-2 px-4 mt-10 border-2 font-medium font-rbt max-sm:text-[12px]">VIEW ALL PRODUCTS</h1>
 
-          <h1
-            className="text-[30px] max-sm:text-[20px] pt-14 max-sm:pt-10"
-            style={{ fontFamily: "itl" }}
-          >
-            BEST SELLERS
-          </h1>
+          <h1 className="text-[30px] max-sm:text-[20px] pt-14 max-sm:pt-10 font-rbt">BEST SELLERS</h1>
           <div className="w-11/12 pt-4">
             <ProdCaro>
               {prod.map((product) => (
@@ -96,11 +87,10 @@ export default function Home() {
               ))}
             </ProdCaro>
           </div>
-          <h1 className="py-5 font-medium max-sm:text-[12px]">
-            VIEW ALL PRODUCTS
-          </h1>
+          <h1 className="py-2 px-4 mt-10 border-2 font-medium font-rbt max-sm:text-[12px]">VIEW ALL PRODUCTS</h1>
         </div>
       </div>
+    
 
       <div className="flex flex-col justify-between ">
         <div className="grid grid-cols-2 max-sm:grid-cols-1   text-white pt-10 ">

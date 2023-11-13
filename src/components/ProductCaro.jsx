@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
-import 'react-multi-carousel/lib/styles.css'
+import 'react-multi-carousel/lib/styles.css';
+
 const ProdCaro = ({ children }) => {
   return (
     
@@ -8,7 +9,7 @@ const ProdCaro = ({ children }) => {
       autoPlaySpeed={8000}
       arrows={false}
       centerMode={false}
-      className="z-10"
+      className=""
       containerClass=""
       dotListClass=""
       draggable
@@ -25,18 +26,25 @@ const ProdCaro = ({ children }) => {
             max: 3000,
             min: 1024,
           },
-          items: 4,
+          items: 5,
         },
         tablet: {
           breakpoint: {
             max: 1024,
-            min: 464,
+            min: 768,
           },
-          items: 3,
+          items: 4,
         },
         mobile: {
           breakpoint: {
-            max: 464,
+            max: 768,
+            min: 480,
+          },
+          items: 3,
+        },
+        xsm: {
+          breakpoint: {
+            max: 480,
             min: 0,
           },
           items: 2,

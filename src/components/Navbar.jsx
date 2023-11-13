@@ -7,6 +7,7 @@ import Search from "../Assets/Search.svg";
 import men from "../Assets/Menu.svg";
 import { AiOutlineHeart, AiOutlineUser, AiOutlineClose } from "react-icons/ai";
 import { FiSearch } from "react-icons/fi";
+import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
 import { FaCaretDown } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -43,27 +44,28 @@ function Navbar() {
           <li className="flex">CONTACT</li>
         </ul>
         <div className="hidden max-lg:block ml-auto cursor-pointer">
-        <Image src={men} alt=""  />
+        <Image src={men} alt=""  onClick={handleClick}/>
         </div>
         <ul className="flex ml-auto justify-between items-center font-sans gap-10 max-md:hidden max-lg:ml-0 pl-5">
           <li className="flex text-lg">
-            <AiOutlineHeart size={25} />
+            <PiHeartLight className="" size={27} />
             (0)
           </li>
           <li className="flex text-lg">
-          <Image src={shhop} alt=""  />
+          <Image src={shhop} alt="" />
             (0)
-          </li>
-          <li className="flex text-lg">
-            <AiOutlineUser size={25} />
           </li>
           <li className="flex text">
-          <Image src={Search} alt=""  />
+            <Image src={Search} alt=""  />
           </li>
+          <li className="flex text-lg">
+            <PiUserCircleLight size={30} />
+          </li>
+         
         </ul>
 
         <div className={menu ? `types absolute right-0 top-0 z-10` : ''}>
-          <ul className="bg-red-50 top-0 absolute h-screen shadow-lg right-[-100%] w-10/12 pt-7 pl-20 flex-column max-sm:w-screen max-sm:pl-10">
+          <ul className="bg-blue-50 top-0 absolute h-screen shadow-lg right-[-100%] w-10/12 pt-7 pl-20 flex-column max-sm:w-screen max-sm:pl-10">
             <ul className="flex justify-between pt-0">
               <li className="text-2xl">MENU</li>
               <li className="pr-10 cursor-pointer">
