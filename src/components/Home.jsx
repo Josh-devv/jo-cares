@@ -2,24 +2,29 @@ import Image from "next/image";
 import { imgCaro } from "@/components/imgCaro";
 import b2 from "@/Assets/banner-large-image2.jpg"
 import Caro from "@/components/Caro";
+import { BsArrowRight } from "react-icons/bs";
+import home from "@/Assets/m1_slider_01.jpg"
 
 function Home() {
   return (
-    <>
-      <Caro>
-        {imgCaro.map((imggs) => (
-          <div key={imggs.id} className="relative font-custom" id={`img${imggs.id}`}>
-            <Image className=" w-[100%] h-[100vh] relative"  alt="" src={imggs.image} />  
-            <div style={{transform: 'translate(-50%, -50%)'}} className="max-md:top-[50%]  animate-slideIn  transition-opacity duration-300 ease-in-out absolute flex flex-col justify-center items-center top-[60%] text-white w-screen left-1/2 mx-auto text-center">
-              <h1 className="text-[6vw] max-sm:text-[33px] italic text" >{imggs.head}</h1>
-              <p className="w-1/2 max-lg:w-10/12 max-sm:text-[13px]" style={{fontFamily: 'ptserifr'}}>{imggs.title}</p>
-              <p className="p-3 font-rbt w-[300px] rounded-md bg-black m-4 max-sm:w-[250px] flex justify-center hover:scale-105 transform transition duration-300 ease-in-out">
-                {imggs.shop}</p>
-            </div>
-          </div>
-        ))}
-      </Caro> 
-  </>
+    <div className="w-full relative h-[100vh] flex justify-between items-center">
+      <div className="w-half ">
+        <div className="absolute pl-10 max-sm:pl-2 top-1/3 w-full">
+          <h1 className="text-[90px] max-md:text-[70px] max-sm:text-[38px] w-[5vw] font-rbt " style={{lineHeight:"100px"}}>THE <i>SPRING </i>COLLECTION</h1> 
+          <button className="p-4 border-2 w-[200px]  max-sm:text-[15px] 
+           border-black rounded-full flex justify-between
+            items-center max-sm:bg-black max-sm:text-white font-rbt">
+              SHOP NOW <BsArrowRight size={40} className="bg-black rounded-full text-white max-sm:text-black max-sm:bg-white" style={{padding:"13px"}} />
+          </button>
+        </div>
+        
+      </div>
+      
+      <div className="w-1/2 border h-full border-b-black border-l-black">
+        <Image src={home} className="w-full shadow-lg object object-cover h-full "/>
+      </div>
+      
+    </div>
   );
 }
 

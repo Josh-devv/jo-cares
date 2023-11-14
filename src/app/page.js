@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar from '@/components/Navbar'
 import Homep from '@/components/Home'
 import { AiOutlineBook, AiOutlineGift } from 'react-icons/ai'
-import { BsHandbag } from 'react-icons/bs'
+import { BsSuitDiamond } from 'react-icons/bs'
 import { HiOutlineRefresh } from 'react-icons/hi'
 import { prod } from '@/components/imgCaro'
 import ProdCaro from "@/components/ProductCaro";
@@ -53,8 +53,14 @@ export default function Home() {
     <div className=" text-black" style={{ fontFamily: "ptserifr", backgroundColor: "" }}>
       <Navbar />
       <Homep />
-      
-      <div className=" pt-16">
+     
+     
+    </div>
+  );
+}
+
+/*
+ <div className=" pt-16">
         <div className="flex justify-center flex-col items-center">
           <h1 className="text-[30px] max-sm:text-[20px] font-rbt space-x-7 leading-4 h-[32px]">NEW ARRIVALS</h1>
           <div>
@@ -64,7 +70,11 @@ export default function Home() {
             <div className="flex text-[25px] max-sm:text-[3.2vw] w-full justify-evenly items-center">
               <p>All</p>
               <p>Apparel</p>
-              <p>Dress</p>
+              <div className="flex justify-center items-center flex-col">
+                <p>Dress</p>
+                <BsSuitDiamond size={13} fill="red"/>
+              </div>
+              
               <p>Tshirt</p>
               <p>Bag</p>
             </div>
@@ -172,6 +182,4 @@ export default function Home() {
       </div>
 
       <Suscribe />
-    </div>
-  );
-}
+*/
