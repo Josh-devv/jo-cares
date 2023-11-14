@@ -10,7 +10,10 @@ module.exports = {
       fontFamily: {
         custom: ['Abril Fatface', 'sans-serif'],
         rbt: ['Tenor Sans','sans-serif'],
-        
+      },
+      screens: {
+        'custom-sm': '500px',
+        'custom-sm2': '350px',
       },
       
     },

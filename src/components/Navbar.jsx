@@ -28,7 +28,7 @@ function Navbar() {
 
   return (
     <>
-      <section className="h-[14vh] fixed w-screen z-50 bg-white text-black  px-10 border-b border-b-black flex items-center justify-center max-[380]:px-5">
+      <section className="h-[14vh] max-sm:h-[10vh] fixed w-screen z-50 bg-white text-black  px-10  border-b border-b-black flex items-center justify-center max-sm:px-5">
         <div className="mr-auto">
           <Image src={logo} alt="" width={120} height={120} />
         </div>
