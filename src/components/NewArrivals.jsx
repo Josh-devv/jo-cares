@@ -4,7 +4,6 @@ import { useState } from "react";
 import { BsSuitDiamond } from "react-icons/bs";
 import { prod, prod3 } from "@/components/imgCaro";
 import ProdCaro from "@/components/ProductCaro";
-import NewArrivals from "@/components/NewArrivals";
 import BestSellers from "@/components/BestSellers";
 import arr from "@/Assets/c3.svg";
 
