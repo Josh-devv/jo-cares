@@ -6,6 +6,7 @@ import p2 from "@/Assets/kal.webp"
 import p3 from "@/Assets/kookai.webp"
 import p4 from "@/Assets/kookai2.webp"
 import p5 from "@/Assets/kookai3.webp"
+import t1 from "@/Assets/tees1.webp"
 import p6 from "@/Assets/product-item5.jpg"
 import p7 from "@/Assets/product-item6.jpg"
 
@@ -127,6 +128,59 @@ export const prod =  [
     {
         id: 2,
         img: p2,
+        title: "Clean Slate Cream Tee",
+        price: "$30.00"
+    },
+    {
+        id: 3,
+        img: p3,
+        title: "Simple white T-shirt",
+        price: "$27.00"
+    },
+    {
+        id: 4,
+        img: p4,
+        title: "Essential Black Shirt",
+        price: "$28.00"
+    },
+    {
+        id: 5,
+        img: p5,
+        title: "Pure Pink Cotton Shirt",
+        price: "$26.00"
+    },
+   
+    {
+        id: 6,
+        img: p4,
+        title: "Clean Slate Cream Tee",
+        price: "$29.00"
+    },/*
+    {
+        id: 7,
+        img: p6,
+        title: "Standard Olive Green Shirt",
+        price: "$31.00"
+    },
+    {
+        id: 8,
+        img: p6,
+        title: "Casual Beige T-shirt",
+        price: "$32.00"
+    },
+    {
+        id: 1,
+        img: p1,
+        title: "Classic White Tee",
+        price: "$25.00"
+    },*/
+    // Add more items as needed
+];
+export const prod3 =  [
+   
+    {
+        id: 2,
+        img: t1,
         title: "Clean Slate Cream Tee",
         price: "$30.00"
     },
