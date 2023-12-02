@@ -29,7 +29,7 @@ export default function NewArrivals() {
         <div className="flex text-[25px] max-sm:text-[3.2vw] w-[100%] justify-around">
           <p
             onClick={() => handleItemClick("Dress")}
-            className={`cursor-pointer w-1/3 text-center justify-center items-center flex flex-col ${
+            className={`cursor-pointer w-1/3 text-center items-center flex flex-col ${
               selectedComponent === "Dress" ? "text-black" : "text-gray-500"
             }`}
           >
@@ -42,7 +42,7 @@ export default function NewArrivals() {
           </p>
           <p
             onClick={() => handleItemClick("Apparel")}
-            className={`cursor-pointer w-1/3 items-center text-center justify-center flex flex-col ${
+            className={`cursor-pointer w-1/3 items-center text-center  flex flex-col ${
               selectedComponent === "Apparel" ? "text-black" : "text-gray-500"
             }`}
           >
@@ -55,7 +55,7 @@ export default function NewArrivals() {
           </p>
           <p
             onClick={() => handleItemClick("All")}
-            className={`cursor-pointer w-1/3 items-center text-center justify-center flex flex-col ${
+            className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
               selectedComponent === "All" ? "text-black" : "text-gray-500"
             }`}
           >
@@ -68,7 +68,7 @@ export default function NewArrivals() {
           </p>
           <p
             onClick={() => handleItemClick("Tshirt")}
-            className={`cursor-pointer w-1/3 items-center text-center justify-center flex flex-col ${
+            className={`cursor-pointer w-1/3 items-center text-center  flex flex-col ${
               selectedComponent === "Tshirt" ? "text-black" : "text-gray-500"
             }`}
           >
@@ -81,7 +81,7 @@ export default function NewArrivals() {
           </p>
           <p
             onClick={() => handleItemClick("Bag")}
-            className={`cursor-pointer w-1/3 items-center text-center justify-center flex flex-col ${
+            className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
               selectedComponent === "Bag" ? "text-black" : "text-gray-500"
             }`}
           >
