@@ -3,12 +3,14 @@ import Image from "next/image";
 import { useState } from "react";
 import { BsSuitDiamond } from "react-icons/bs";
 import { prod, prod3 } from "@/components/imgCaro";
+import { GoNorthStar } from "react-icons/go";
+import { ImDiamonds } from "react-icons/im";
 import ProdCaro from "@/components/ProductCaro";
 import BestSellers from "@/components/BestSellers";
 import arr from "@/Assets/c3.svg";
 
 export default function NewArrivals() {
-  const [selectedComponent, setSelectedComponent] = useState("All");
+  const [selectedComponent, setSelectedComponent] = useState("ACCESSORIES");
 
   const handleItemClick = (component, event) => {
     event.preventDefault()
@@ -16,53 +18,53 @@ export default function NewArrivals() {
   };
 
   return (
-    <div className=" pt-16">
+    <div className=" pt-20">
       <div className="flex justify-center flex-col items-center">
-        <h1 className="text-[30px] max-sm:text-[20px] font-rbt space-x-7 leading-4 h-[32px]">
-          NEW ARRIVALS
+        <h1 className="text-[45px] max-sm:text-[20px] flex items-center font-rbt ">
+        <GoNorthStar size={25} /> POPULAR PRODUCTS<GoNorthStar size={25} />
         </h1>
-        <div>
-          <Image src={arr} className="w-[200px]" />
+        <div className="text-gray-500 text-[20px]">
+          eCommerce Talks discusses tech, current trends, and insights from around the eCommerce world
         </div>
       </div>
 
       <div className="font-rbt w-[100%] pt-5">
         <div className="flex text-[25px] max-sm:text-[20px] w-[100%] justify-around">
           <p
-            onClick={(event) => handleItemClick("Dress", event)}
+            onClick={(event) => handleItemClick("WOMEN", event)}
             className={`cursor-pointer w-1/3 text-center items-center flex flex-col ${
-              selectedComponent === "Dress" ? "text-black" : "text-gray-500"
+              selectedComponent === "WOMEN" ? "text-black" : "text-gray-500"
             }`}
           >
-            Dress{" "}
-            {selectedComponent === "Dress" ? (
-              <BsSuitDiamond size={13} fill="red" />
+            WOMEN{" "}
+            {selectedComponent === "WOMEN" ? (
+              <ImDiamonds size={13} />
             ) : (
               ""
             )}
           </p>
           <p
-            onClick={(event) => handleItemClick("Apparel", event)}
+            onClick={(event) => handleItemClick("MEN", event)}
             className={`cursor-pointer w-1/3 items-center text-center  flex flex-col ${
-              selectedComponent === "Apparel" ? "text-black" : "text-gray-500"
+              selectedComponent === "MEN" ? "text-black" : "text-gray-500"
             }`}
           >
-            Apparel{" "}
-            {selectedComponent === "Apparel" ? (
-              <BsSuitDiamond size={13} fill="red" />
+            MEN{" "}
+            {selectedComponent === "MEN" ? (
+              <ImDiamonds size={13} />
             ) : (
               ""
             )}
           </p>
           <p
-            onClick={(event) => handleItemClick("All", event)}
+            onClick={(event) => handleItemClick("ACCESSORIES", event)}
             className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
-              selectedComponent === "All" ? "text-black" : "text-gray-500"
+              selectedComponent === "ACCESSORIES" ? "text-black" : "text-gray-500"
             }`}
           >
-            All{" "}
-            {selectedComponent === "All" ? (
-              <BsSuitDiamond size={13} fill="red" />
+            ACCESSORIES{" "}
+            {selectedComponent === "ACCESSORIES" ? (
+              <ImDiamonds size={13} />
             ) : (
               ""
             )}
@@ -75,7 +77,7 @@ export default function NewArrivals() {
           >
             Tshirt{" "}
             {selectedComponent === "Tshirt" ? (
-              <BsSuitDiamond size={13} fill="red" />
+              <ImDiamonds size={13} />
             ) : (
               ""
             )}
@@ -98,21 +100,21 @@ export default function NewArrivals() {
 
       <div className="flex justify-center items-center w-full flex-col">
         <div className="w-11/12 pt-4 ">
-          {selectedComponent === "All" && (
+          {selectedComponent === "ACCESSORIES" && (
             <ProdCaro>
               {prod.map((product) => (
                 <BestSellers product={product} />
               ))}
             </ProdCaro>
           )}
-          {selectedComponent === "Apparel" && (
+          {selectedComponent === "MEN" && (
             <ProdCaro>
               {prod.map((product) => (
                 <BestSellers product={product} />
               ))}
             </ProdCaro>
           )}
-          {selectedComponent === "Dress" && (
+          {selectedComponent === "WOMEN" && (
             <ProdCaro>
               {prod.map((product) => (
                 <BestSellers product={product} />
