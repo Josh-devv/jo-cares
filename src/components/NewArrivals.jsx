@@ -10,7 +10,8 @@ import arr from "@/Assets/c3.svg";
 export default function NewArrivals() {
   const [selectedComponent, setSelectedComponent] = useState("All");
 
-  const handleItemClick = (component) => {
+  const handleItemClick = (component, event) => {
+    event.preventDefault()
     setSelectedComponent(component);
   };
 
@@ -26,9 +27,9 @@ export default function NewArrivals() {
       </div>
 
       <div className="font-rbt w-[100%] pt-5">
-        <div className="flex text-[25px] max-sm:text-[3.2vw] w-[100%] justify-around">
+        <div className="flex text-[25px] max-sm:text-[20px] w-[100%] justify-around">
           <p
-            onClick={() => handleItemClick("Dress")}
+            onClick={(event) => handleItemClick("Dress", event)}
             className={`cursor-pointer w-1/3 text-center items-center flex flex-col ${
               selectedComponent === "Dress" ? "text-black" : "text-gray-500"
             }`}
@@ -41,7 +42,7 @@ export default function NewArrivals() {
             )}
           </p>
           <p
-            onClick={() => handleItemClick("Apparel")}
+            onClick={(event) => handleItemClick("Apparel", event)}
             className={`cursor-pointer w-1/3 items-center text-center  flex flex-col ${
               selectedComponent === "Apparel" ? "text-black" : "text-gray-500"
             }`}
@@ -54,7 +55,7 @@ export default function NewArrivals() {
             )}
           </p>
           <p
-            onClick={() => handleItemClick("All")}
+            onClick={(event) => handleItemClick("All", event)}
             className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
               selectedComponent === "All" ? "text-black" : "text-gray-500"
             }`}
@@ -67,7 +68,7 @@ export default function NewArrivals() {
             )}
           </p>
           <p
-            onClick={() => handleItemClick("Tshirt")}
+            onClick={(event) => handleItemClick("Tshirt", event)}
             className={`cursor-pointer w-1/3 items-center text-center  flex flex-col ${
               selectedComponent === "Tshirt" ? "text-black" : "text-gray-500"
             }`}
@@ -80,7 +81,7 @@ export default function NewArrivals() {
             )}
           </p>
           <p
-            onClick={() => handleItemClick("Bag")}
+            onClick={(event) => handleItemClick("Bag", event)}
             className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
               selectedComponent === "Bag" ? "text-black" : "text-gray-500"
             }`}
