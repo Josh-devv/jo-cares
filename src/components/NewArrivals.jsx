@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import { BsSuitDiamond } from "react-icons/bs";
-import { prod, prod3 } from "@/components/imgCaro";
+import { prod, prod3, prod2 } from "@/components/imgCaro";
 import { GoNorthStar } from "react-icons/go";
 import { ImDiamonds } from "react-icons/im";
 import ProdCaro from "@/components/ProductCaro";
@@ -10,99 +10,107 @@ import BestSellers from "@/components/BestSellers";
 import arr from "@/Assets/c3.svg";
 
 export default function NewArrivals() {
-  const [selectedComponent, setSelectedComponent] = useState("ACCESSORIES");
+  const [selectedComponent, setSelectedComponent] = useState("MEN");
+  const [select2, setSelect2] = useState(false)
 
   const handleItemClick = (component, event) => {
     event.preventDefault()
     setSelectedComponent(component);
+    
   };
 
+  const handSelect = ()=>{
+    setSelect2(true)
+  }
+  const hands =()=>{
+    setSelect2(false)
+  }
   return (
     <div className=" pt-20">
       <div className="flex justify-center flex-col items-center">
         <h1 className="text-[45px] max-sm:text-[20px] flex items-center font-rbt ">
-        <GoNorthStar size={25} /> POPULAR PRODUCTS<GoNorthStar size={25} />
+          <GoNorthStar size={25} /> POPULAR PRODUCTS
+          <GoNorthStar size={25} />
         </h1>
-        <div className="text-gray-500 text-[20px]">
-          eCommerce Talks discusses tech, current trends, and insights from around the eCommerce world
+        <div className="text-gray-500 text-[20px] text-center w-11/12 max-sm:text-[15px]">
+          eCommerce Talks discusses tech, current trends, and insights from
+          around the eCommerce world
         </div>
       </div>
 
-      <div className="font-rbt w-[100%] pt-5">
-        <div className="flex text-[25px] max-sm:text-[20px] w-[100%] justify-around">
+    
+      {select2 && (
+        <div onClick={hands} className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 border border-gray-300 shadow-lg
+        rounded z-50">
+          <span className="absolute top-0 right-0 cursor-pointer" onClick={handSelect}>&times;</span>
+          
           <p
             onClick={(event) => handleItemClick("WOMEN", event)}
             className={`cursor-pointer w-1/3 text-center items-center flex flex-col ${
               selectedComponent === "WOMEN" ? "text-black" : "text-gray-500"
             }`}
           >
-            WOMEN{" "}
-            {selectedComponent === "WOMEN" ? (
-              <ImDiamonds size={13} />
-            ) : (
-              ""
-            )}
+            WOMEN {selectedComponent === "WOMEN" ? "" : ""}
+            
           </p>
           <p
             onClick={(event) => handleItemClick("MEN", event)}
-            className={`cursor-pointer w-1/3 items-center text-center  flex flex-col ${
+            className={`cursor-pointer py-1 w-1/3 items-center text-center  flex flex-col ${
               selectedComponent === "MEN" ? "text-black" : "text-gray-500"
             }`}
           >
-            MEN{" "}
-            {selectedComponent === "MEN" ? (
-              <ImDiamonds size={13} />
-            ) : (
-              ""
-            )}
+            MEN {selectedComponent === "MEN" ? "" : ""}
           </p>
+
           <p
             onClick={(event) => handleItemClick("ACCESSORIES", event)}
             className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
-              selectedComponent === "ACCESSORIES" ? "text-black" : "text-gray-500"
+              selectedComponent === "ACCESSORIES"
+                ? "text-black"
+                : "text-gray-500"
             }`}
           >
-            ACCESSORIES{" "}
-            {selectedComponent === "ACCESSORIES" ? (
-              <ImDiamonds size={13} />
-            ) : (
-              ""
-            )}
+            ACCESSORIES {selectedComponent === "ACCESSORIES" ? "" : ""}
+          </p>
+        </div>
+      ) }
+
+      <div className="font-rbt w-[100%] flex pt-5 max-sm:flex justify-center">
+        <div className="flex max-sm:flex-col max-sm:border max-sm:border-x-0 border-black max-sm:items-center text-[25px] max-lg:text-[20px] max-sm:text-[15px] w-[70%] justify-center">
+          <p
+            onClick={(event)=> handleItemClick("WOMEN", event)}
+            className={`cursor-pointer py-1 w-1/3 items-center  text-center  flex flex-col ${
+              selectedComponent === "WOMEN" ? "text-black" : "max-sm:hidden"
+            }`}
+          > <div onClick={handSelect}>WOMEN</div>{" "}
+          {selectedComponent === "WOMEN" ? <ImDiamonds size={13} /> : ""}
           </p>
           <p
-            onClick={(event) => handleItemClick("Tshirt", event)}
-            className={`cursor-pointer w-1/3 items-center text-center  flex flex-col ${
-              selectedComponent === "Tshirt" ? "text-black" : "text-gray-500"
+            onClick={(event)=> handleItemClick("MEN", event)}
+            className={`cursor-pointer py-1 w-1/3 items-center text-center  flex flex-col ${
+              selectedComponent === "MEN" ? "text-black" : "text-gray max-sm:hidden"
             }`}
-          >
-            Tshirt{" "}
-            {selectedComponent === "Tshirt" ? (
-              <ImDiamonds size={13} />
-            ) : (
-              ""
-            )}
+          > <div onClick={handSelect}>MEN</div> 
+           {selectedComponent === "MEN" ? <ImDiamonds size={13} /> : ""}
           </p>
           <p
-            onClick={(event) => handleItemClick("Bag", event)}
-            className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
-              selectedComponent === "Bag" ? "text-black" : "text-gray-500"
+            onClick={(event)=> handleItemClick("ACCESSORIES", event)}
+            className={`cursor-pointer py-1 w-1/3 items-center text-center  flex flex-col ${
+              selectedComponent === "ACCESSORIES" ? "text-black" : "max-sm:hidden text-gray"
             }`}
-          >
-            Bag{" "}
-            {selectedComponent === "Bag" ? (
-              <BsSuitDiamond size={13} fill="red" />
-            ) : (
-              ""
-            )}
+          > <div onClick={handSelect}>ACCESSORIES</div> 
+             {selectedComponent === "ACCESSORIES" ? <ImDiamonds size={13} /> : ""}
           </p>
+           
         </div>
       </div>
 
+      
       <div className="flex justify-center items-center w-full flex-col">
         <div className="w-11/12 pt-4 ">
           {selectedComponent === "ACCESSORIES" && (
             <ProdCaro>
-              {prod.map((product) => (
+              {prod2.map((product) => (
                 <BestSellers product={product} />
               ))}
             </ProdCaro>
@@ -116,21 +124,7 @@ export default function NewArrivals() {
           )}
           {selectedComponent === "WOMEN" && (
             <ProdCaro>
-              {prod.map((product) => (
-                <BestSellers product={product} />
-              ))}
-            </ProdCaro>
-          )}
-          {selectedComponent === "Tshirt" && (
-            <ProdCaro>
               {prod3.map((product) => (
-                <BestSellers product={product} />
-              ))}
-            </ProdCaro>
-          )}
-          {selectedComponent === "Bag" && (
-            <ProdCaro>
-              {prod.map((product) => (
                 <BestSellers product={product} />
               ))}
             </ProdCaro>

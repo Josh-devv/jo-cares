@@ -76,7 +76,7 @@ export const data2 =[
 export const prod2 =  [
     {
         id:1,
-        img: p1,
+        img: p2,
         title: "NATURAL GLOW",
         price: "$95.00"
     },
