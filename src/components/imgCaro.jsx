@@ -1,7 +1,7 @@
 import b1 from "@/Assets/banner-large-image1.png"
 import b2 from "@/Assets/banner-large-image2.jpg"
 import b3 from "@/Assets/last.jpeg"
-import p1 from "@/Assets/plain6.jpg"
+import p1 from "@/Assets/blazer.jpg"
 import p2 from "@/Assets/p-038.jpg"
 import p3 from "@/Assets/p-020.jpg"
 import p4 from "@/Assets/p-019.jpg"
@@ -77,38 +77,38 @@ export const prod2 =  [
     {
         id:1,
         img: p2,
-        title: "NATURAL GLOW",
-        price: "$95.00"
+        title: "LUNE SOLID OPEN FRONT BLAZER",
+        price: "$159.99"
     },
     {
         id:2,
-        img: p2,
-        title: "NATURAL GLOW",
-        price: "$95.00"
+        img: p1,
+        title: "PANTS SUIT WITHOUT CAMI TOP",
+        price: "$99.99"
     },
     {
         id:3,
         img: p3,
-        title: "NATURAL GLOW",
-        price: "$95.00"
+        title: "LAPEL NECK DOUBLE BREASTED BLAZER",
+        price: "$79.99"
     },
     {
         id:4,
         img: p4,
-        title: "NATURAL GLOW",
-        price: "$95.00"
+        title: "SOLID NOTCH NECK BLAZER",
+        price: "$99.99"
     },
     {
         id:5,
         img: p5,
-        title: "NATURAL GLOW",
-        price: "$95.00"
+        title: "SOLID FORM FITTED TEE",
+        price: "$49.99"
     },
     {
         id:6,
         img: p6,
-        title: "NATURAL GLOW",
-        price: "$95.00"
+        title: "1PC SOLID FORM FITTED TEE",
+        price: "$29.99"
     },
     {
         id:7,
@@ -127,7 +127,7 @@ export const prod =  [
    
     {
         id: 2,
-        img: p2,
+        img: p1,
         title: "Clean Slate Cream Tee",
         price: "$30.00"
     },
@@ -180,7 +180,7 @@ export const prod3 =  [
    
     {
         id: 2,
-        img: t1,
+        img: p1,
         title: "Clean Slate Cream Tee",
         price: "$30.00"
     },

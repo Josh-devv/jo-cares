@@ -42,14 +42,22 @@ export default function Home() {
       <Navbar />
       <Homep />
       <NewArrivals />
-      <section className="h-[100vh] bg-black mt-16 flex  items-center">
-        <div className="w-[50%] flex justify-start items-start">
-          <Image src={sImg}  className="h-[80vh] object-contain" />
+      <section className="h-[80vh] max-custom-sm3:h-[100%] bg-black mt-16 flex max-custom-sm3:flex-col">
+        <div className="w-[50%] max-custom-sm3:w-[100%]  flex justify-start items-start">
+          <Image src={sImg}  className="h-[100vh] max-lg:h-[65vh] max-custom-sm3:flex max-custom-sm3:justify-center max-custom-sm3:items-center object-contain" />
         </div>
-        <div>
-          <h1 className="text-white font-rbt text-[40px] w-4/5">ENJOY OUR ONE OFF DEALS ALL THE WAY</h1>
-          <p className="text-gray-500 text-[20px]"> eCommerce Talks discusses tech, current trends, and insights from around the eCommerce world</p>
-          
+        <div className="text-white relative flex flex-col justify-center items-start w-[50%] max-custom-sm3:w-[100%]">
+          <h1 className="text-white max-sm:text-center max-xl:text-[50px] max-lg:text-[40px] max-custom-sm3:text-[35px] font-rbt text-[60px] w-full">UP TO 45% OFFERS</h1>
+          <p className="text-white max-sm:text-center max-sm:w-[90%] text-[20px] w-10/12"> A fashion store is a retail establishment that specializes in clothing and
+            accessories. Fashion stores can range from small boutiques to large department stores and can sell wide range
+          </p>
+          <div className="flex justify-between max-sm:justify-center max-sm:w-11/12 flex-wrap pt-10 w-10/12 max-custom-sm3:w-3/5">
+            <span className=" rounded-full h-24 text-[20px] w-24 border flex justify-center items-center">365 DAYS</span>
+            <span className=" rounded-full h-24 text-[20px] w-24 border flex justify-center items-center">365 DAYS</span>
+            <span className=" rounded-full h-24 text-[20px] w-24 border flex justify-center items-center">365 DAYS</span>
+            <span className=" rounded-full h-24 text-[20px] w-24 border flex justify-center items-center">365 DAYS</span>
+          </div>
+          <button>SHOP NOW</button>
         </div>
       </section>
     </div>

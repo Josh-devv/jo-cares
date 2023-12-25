@@ -7,12 +7,13 @@ import { GoNorthStar } from "react-icons/go";
 import { ImDiamonds } from "react-icons/im";
 import ProdCaro from "@/components/ProductCaro";
 import BestSellers from "@/components/BestSellers";
-import arr from "@/Assets/c3.svg";
+
 
 export default function NewArrivals() {
   const [selectedComponent, setSelectedComponent] = useState("MEN");
   const [select2, setSelect2] = useState(false)
 
+  //function to render items by passing the name of the items as components
   const handleItemClick = (component, event) => {
     event.preventDefault()
     setSelectedComponent(component);
@@ -25,6 +26,7 @@ export default function NewArrivals() {
   const hands =()=>{
     setSelect2(false)
   }
+
   return (
     <div className=" pt-20">
       <div className="flex justify-center flex-col items-center">
@@ -38,74 +40,69 @@ export default function NewArrivals() {
         </div>
       </div>
 
-    
+      {/**Condition to disply this popup on click of any items name */}    
       {select2 && (
-        <div onClick={hands} className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 border border-gray-300 shadow-lg
-        rounded z-50">
-          <span className="absolute top-0 right-0 cursor-pointer" onClick={handSelect}>&times;</span>
-          
-          <p
-            onClick={(event) => handleItemClick("WOMEN", event)}
-            className={`cursor-pointer w-1/3 text-center items-center flex flex-col ${
-              selectedComponent === "WOMEN" ? "text-black" : "text-gray-500"
-            }`}
-          >
-            WOMEN {selectedComponent === "WOMEN" ? "" : ""}
-            
-          </p>
-          <p
-            onClick={(event) => handleItemClick("MEN", event)}
-            className={`cursor-pointer py-1 w-1/3 items-center text-center  flex flex-col ${
-              selectedComponent === "MEN" ? "text-black" : "text-gray-500"
-            }`}
-          >
-            MEN {selectedComponent === "MEN" ? "" : ""}
-          </p>
+        <div onClick={hands} className="fixed hidden  top-1/2 left-1/2 w-[70vw]
+         max-sm:flex max-sm:items-center max-sm:flex-col  transform -translate-x-1/2
+          -translate-y-1/2 bg-white p-6 border border-gray-300 shadow-lg
+          rounded z-50">
+            <p onClick={(event) => handleItemClick("WOMEN", event)}
+               className={`cursor-pointer w-1/3 text-center items-center flex flex-col ${
+                selectedComponent === "WOMEN" ? "text-black" : "text-gray-500"}`}>
+                WOMEN
+                {selectedComponent === "WOMEN" ? "" : ""}
+            </p>
+            <p onClick={(event) => handleItemClick("MEN", event)}
+              className={`cursor-pointer py-1 w-1/3 items-center text-center  flex flex-col ${
+              selectedComponent === "MEN" ? "text-black" : "text-gray-500"}`}>
+              MEN {selectedComponent === "MEN" ? "" : ""}
+            </p>
 
-          <p
-            onClick={(event) => handleItemClick("ACCESSORIES", event)}
-            className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
-              selectedComponent === "ACCESSORIES"
+          <p onClick={(event) => handleItemClick("ACCESSORIES", event)}
+             className={`cursor-pointer w-1/3 items-center text-center flex flex-col ${
+             selectedComponent === "ACCESSORIES"
                 ? "text-black"
-                : "text-gray-500"
-            }`}
-          >
-            ACCESSORIES {selectedComponent === "ACCESSORIES" ? "" : ""}
+                : "text-gray-500"}`}>
+              ACCESSORIES {selectedComponent === "ACCESSORIES" ? "" : ""}
           </p>
         </div>
       ) }
 
       <div className="font-rbt w-[100%] flex pt-5 max-sm:flex justify-center">
-        <div className="flex max-sm:flex-col max-sm:border max-sm:border-x-0 border-black max-sm:items-center text-[25px] max-lg:text-[20px] max-sm:text-[15px] w-[70%] justify-center">
+        <div className="flex max-sm:flex-col max-sm:border max-sm:border-x-0
+         border-black max-sm:items-center text-[25px] max-lg:text-[20px] 
+         max-sm:text-[15px] w-[70%] justify-center">
           <p
             onClick={(event)=> handleItemClick("WOMEN", event)}
             className={`cursor-pointer py-1 w-1/3 items-center  text-center  flex flex-col ${
               selectedComponent === "WOMEN" ? "text-black" : "max-sm:hidden"
-            }`}
-          > <div onClick={handSelect}>WOMEN</div>{" "}
-          {selectedComponent === "WOMEN" ? <ImDiamonds size={13} /> : ""}
+            }`}> 
+            <div onClick={handSelect}>WOMEN</div>{" "}
+            {selectedComponent === "WOMEN" ? <ImDiamonds size={13} /> : ""}
           </p>
+
           <p
             onClick={(event)=> handleItemClick("MEN", event)}
             className={`cursor-pointer py-1 w-1/3 items-center text-center  flex flex-col ${
               selectedComponent === "MEN" ? "text-black" : "text-gray max-sm:hidden"
-            }`}
-          > <div onClick={handSelect}>MEN</div> 
-           {selectedComponent === "MEN" ? <ImDiamonds size={13} /> : ""}
+            }`}>
+             <div onClick={handSelect}>MEN</div> 
+              {selectedComponent === "MEN" ? <ImDiamonds size={13} /> : ""}
           </p>
+
           <p
             onClick={(event)=> handleItemClick("ACCESSORIES", event)}
             className={`cursor-pointer py-1 w-1/3 items-center text-center  flex flex-col ${
               selectedComponent === "ACCESSORIES" ? "text-black" : "max-sm:hidden text-gray"
-            }`}
-          > <div onClick={handSelect}>ACCESSORIES</div> 
+            }`}> 
+            <div onClick={handSelect}>ACCESSORIES</div> 
              {selectedComponent === "ACCESSORIES" ? <ImDiamonds size={13} /> : ""}
           </p>
            
         </div>
       </div>
 
-      
+      {/**Rendering of items in these components */}     
       <div className="flex justify-center items-center w-full flex-col">
         <div className="w-11/12 pt-4 ">
           {selectedComponent === "ACCESSORIES" && (
@@ -137,25 +134,3 @@ export default function NewArrivals() {
     </div>
   );
 }
-
-/*
-<div className="flex justify-evenly font-rbt" key={product.id}>
-        <div className=" h-10/12 w-11/12">
-          <div className="relative">
-            <div className=" absolute flex justify-end items-end pr-3 pt-3"><AiOutlineHeart size={23} className=""/></div>
-            <div className="absolute flex justify-end items-end  pr-3 pt-12"> <Image src={shhop} alt=""/></div>
-           
-            <Image src={product.img} className="rounded-sm w-[240px] bg-cover" alt="" />
-          </div>
-          
-          <div className="h-[85px] border-2 flex flex-col">
-            <h1 className="text-[20px]  max-sm:text-[10px]">
-              {product.title}
-            </h1>
-            <p className="text-[20px] font-normal" style={{color: "#DD8560"}}>{product.price}</p>
-            
-          </div>
-        </div>
-      </div>
-
-      */
