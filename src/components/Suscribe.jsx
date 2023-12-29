@@ -7,12 +7,12 @@ import { FaFacebook, FaTwitter, FaYoutube, FaBehance } from "react-icons/fa";
 export default function Suscribe(){
     return (
       <>
-      <div className="flex  justify-between items-center max-md:flex-col w-[100%] text-black border border-t-black ">
+      <div className="flex font-rbt1  justify-between items-center max-md:flex-col w-[100%] text-black border border-t-black ">
         <div className="w-[20%] flex  justify-center max-sm:self-start max-sm:pl-3 max-md:py-7 max-sm:w-[30%]"><Image src={logo} /></div>
         
         <div className="flex w-[100%] max-md:w-[100%] justify-evenly max-md:flex-wrap max-md:justify-start">
           <div className="p-3 text-[13px] max-lg:text-[13px]">
-            <h1 className="text-[17px]">OTHER PAGES</h1>
+            <h1 className="text-[17px] ">OTHER PAGES</h1>
             <p className="pt-2">Home</p>
             <p className="pt-2">Category</p>
             <p className="pt-2">Contact</p>

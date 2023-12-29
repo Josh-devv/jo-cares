@@ -28,7 +28,7 @@ export default function NewArrivals() {
   }
 
   return (
-    <div className=" pt-20">
+    <div className=" pt-16">
       <div className="flex justify-center flex-col items-center">
         <h1 className="text-[45px] max-sm:text-[20px] flex items-center font-rbt ">
           <GoNorthStar size={25} /> POPULAR PRODUCTS
@@ -68,7 +68,7 @@ export default function NewArrivals() {
         </div>
       ) }
 
-      <div className="font-rbt w-[100%] flex pt-5 max-sm:flex justify-center">
+      <div className="font-rbt1 w-[100%] flex pt-5 max-sm:flex justify-center">
         <div className="flex max-sm:flex-col max-sm:border max-sm:border-x-0
          border-black max-sm:items-center text-[25px] max-lg:text-[20px] 
          max-sm:text-[15px] w-[70%] justify-center">
@@ -127,7 +127,7 @@ export default function NewArrivals() {
             </ProdCaro>
           )}
         </div>
-        <h1 className="py-2 px-4 mt-10 border-2 font-medium font-rbt max-sm:text-[12px]">
+        <h1 className="py-2 px-4 mt-10 border border-black font-medium font-rbt max-sm:text-[12px]">
           VIEW ALL PRODUCTS
         </h1>
       </div>

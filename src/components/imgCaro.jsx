@@ -8,6 +8,8 @@ import p4 from "@/Assets/p-019.jpg"
 import p5 from "@/Assets/p-018.jpg"
 import t1 from "@/Assets/tees1.webp"
 import prr from "@/Assets/prads.png"
+import prr1 from "@/Assets/burr.png"
+import prr2 from "@/Assets/loi2.png"
 import p6 from "@/Assets/product-item5.jpg"
 import p7 from "@/Assets/product-item6.jpg"
 
@@ -46,10 +48,10 @@ export const brand =[
         image: prr
     },
     {
-        image: prr
+        image: prr1
     },
     {
-        image: prr
+        image: prr2
     },
     {
         image: prr
