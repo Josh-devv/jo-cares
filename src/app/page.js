@@ -47,7 +47,7 @@ export default function Home() {
       <NewArrivals />
       <section className="h-[100%] max-custom-sm3:h-[100%] bg-black mt-16 flex max-custom-sm3:flex-col">
         <div className="w-[50%] max-custom-sm3:w-[100%]  flex justify-start items-start">
-          <Image src={sImg}  className="h-[80vh] max-lg:h-[75vh] max-lg:pt-20 max-custom-sm3:flex max-custom-sm3:pt-0 max-custom-sm3:justify-center max-custom-sm3:items-center object-contain" />
+          <Image src={sImg}  className="h-[80vh] max-sm:h-[60vh] max-lg:h-[75vh] max-lg:pt-20 max-custom-sm3:flex max-custom-sm3:pt-0 max-custom-sm3:justify-center max-custom-sm3:items-center object-contain" />
         </div>
         <div className="text-white relative max-custom-sm3:p-3 flex flex-col justify-center items-start w-[50%] max-custom-sm3:w-[100%]">
           <h1 className="text-white max-md:text-center max-xl:text-[50px] max-lg:text-[40px] max-custom-sm3:text-[35px] font-rbt text-[60px] w-full">UP TO 45% OFFERS</h1>

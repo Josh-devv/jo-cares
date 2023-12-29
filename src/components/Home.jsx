@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import home from "@/Assets/m1_slider_01.jpg"
+import sImg from "@/Assets/wom.jpg"
 
 function Home() {
   return (
@@ -18,9 +19,10 @@ function Home() {
           </button>
         </div>
       </div>
-      <div className="w-1/2 max-sm:w-full border h-full border-b-black border-l-black">
-        <Image src={home} className="w-full shadow-lg  object-cover h-full "/>
+      <div className="w-1/2  max-sm:w-full border h-full border-b-black border-l-black">
+        <Image src={home} className="w-full relative shadow-lg  object-cover h-full inset-0 opacity-50"/>
       </div>
+      
     </div>
   );
 }
