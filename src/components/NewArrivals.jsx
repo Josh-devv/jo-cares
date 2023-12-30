@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link';
 import { useState } from "react";
 import { BsSuitDiamond } from "react-icons/bs";
 import { prod, prod3, prod2 } from "@/components/imgCaro";
 import { GoNorthStar } from "react-icons/go";
 import { ImDiamonds } from "react-icons/im";
 import ProdCaro from "@/components/ProductCaro";
+
 import BestSellers from "@/components/BestSellers";
 
 
@@ -22,9 +24,20 @@ export default function NewArrivals() {
 
   const handSelect = ()=>{
     setSelect2(true)
+
+    // Disable scrolling when the popup appears
+    //if (!select2) {
+    //  document.body.style.overflow = 'hidden';
+    //} else {
+    //  document.body.style.overflow = 'auto';
+    //}
+
   }
   const hands =()=>{
     setSelect2(false)
+    //if (select2) {
+    //  document.body.style.overflow = 'auto';
+    //} 
   }
 
   return (
@@ -107,8 +120,10 @@ export default function NewArrivals() {
         <div className="w-11/12 pt-4 ">
           {selectedComponent === "ACCESSORIES" && (
             <ProdCaro>
-              {prod2.map((product) => (
-                <BestSellers product={product} />
+              {prod2.map((product,  id) => (
+                <Link href={`/news`}>
+                  <BestSellers product={product} />
+                </Link>
               ))}
             </ProdCaro>
           )}

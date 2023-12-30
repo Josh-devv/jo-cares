@@ -26,9 +26,27 @@ function Navbar() {
     }
   }})
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
     <>
-      <section className="h-[14vh] max-sm:h-[10vh] fixed w-screen z-50 bg-white text-black  px-10  border-b border-b-black flex items-center justify-center max-sm:px-5">
+      <section style={{ top: visible ? '0' : '-100px', transition: 'top 0.3s' }}
+      className="h-[14vh] max-sm:h-[10vh] bg-transparent fixed w-screen z-50 bg-white text-black  px-10  border-b border-b-black flex items-center justify-center max-sm:px-5">
         <div className="mr-auto">
           <Image src={logo} alt="" width={120} height={120} />
         </div>

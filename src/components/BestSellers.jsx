@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import shhop from "../Assets/shhop.svg";
+import Link from 'next/link';
+import start from "../Assets/star.png";
 import AOSWrapper from "./AOSWarapper";
 import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
 
@@ -29,10 +30,11 @@ export default function NewArrivals({product}){
             
           </div>          
           <div className=" flex flex-col font-rbt1">
-            <h1 className="text-[1.4vw] max-lg:text-[1.8vw] max-md:text-[2.2vw] max-sm:text-[3.2vw]">
+            <h1 className="text-[1.4vw] max-lg:text-[1.8vw] font-bold max-md:text-[2.2vw] max-sm:text-[3.3vw]">
               {product.title}
             </h1>
-            <p className="text-[1.4vw] max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">{product.price}</p>           
+            <p className="text-[1.4vw] font-bold max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">{product.price}</p>           
+            <Image src={start} className="w-[60px]"/>
           </div>
         </div>
       </div>

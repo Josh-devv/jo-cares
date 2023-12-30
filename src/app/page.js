@@ -77,7 +77,7 @@ export default function Home() {
         </div>
         <div className="text-white relative max-custom-sm3:p-3 flex flex-col justify-center items-start w-[50%] max-custom-sm3:w-[100%]">
           <h1 className="text-white  max-md:text-center max-xl:text-[50px] max-lg:text-[40px] max-custom-sm3:text-[35px] font-custom text-[60px] w-full">UP TO 45% OFFERS</h1>
-          <p className="text-white font-rbt2 max-md:text-center max-md:w-[100%] text-[20px] w-10/12"> A fashion store is a retail establishment that specializes in clothing and
+          <p className="text-white font-rbt2 max-md:text-center max-md:w-[100%] text-[20px] max-sm:text-[15px] w-10/12"> A fashion store is a retail establishment that specializes in clothing and
             accessories. Fashion stores can range from small boutiques to large department stores and can sell wide range
           </p>
           <div className="flex font-custom justify-between max-md:justify-center max-md:w-[100%] max-custom-sm3:flex-nowrap flex-wrap pt-10 w-10/12 max-custom-sm3:w-3/5">

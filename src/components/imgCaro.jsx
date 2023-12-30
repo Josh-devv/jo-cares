@@ -146,32 +146,32 @@ export const prod2 =  [
 export const prod =  [
    
     {
-        id: 2,
+        id: 1,
         img: p1,
         title: "Clean Slate Cream Tee",
         price: "$30.00"
     },
     {
-        id: 3,
+        id: 2,
         img: p3,
         title: "Simple white T-shirt",
         price: "$27.00"
     },
     {
-        id: 4,
+        id: 3,
         img: p4,
         title: "Essential Black Shirt",
         price: "$28.00"
     },
     {
-        id: 5,
+        id: 4,
         img: p5,
         title: "Pure Pink Cotton Shirt",
         price: "$26.00"
     },
    
     {
-        id: 6,
+        id: 5,
         img: p4,
         title: "Clean Slate Cream Tee",
         price: "$29.00"
@@ -199,32 +199,32 @@ export const prod =  [
 export const prod3 =  [
    
     {
-        id: 2,
+        id: 1,
         img: p1,
         title: "Clean Slate Cream Tee",
         price: "$30.00"
     },
     {
-        id: 3,
+        id: 2,
         img: p3,
         title: "Simple white T-shirt",
         price: "$27.00"
     },
     {
-        id: 4,
+        id: 3,
         img: p4,
         title: "Essential Black Shirt",
         price: "$28.00"
     },
     {
-        id: 5,
+        id: 4,
         img: p5,
         title: "Pure Pink Cotton Shirt",
         price: "$26.00"
     },
    
     {
-        id: 6,
+        id: 5,
         img: p4,
         title: "Clean Slate Cream Tee",
         price: "$29.00"
