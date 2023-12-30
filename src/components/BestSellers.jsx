@@ -34,7 +34,7 @@ export default function NewArrivals({product}){
               {product.title}
             </h1>
             <p className="text-[1.4vw] font-bold max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">{product.price}</p>           
-            <Image src={start} className="w-[60px]"/>
+            
           </div>
         </div>
       </div>

@@ -121,7 +121,7 @@ export default function NewArrivals() {
           {selectedComponent === "ACCESSORIES" && (
             <ProdCaro>
               {prod2.map((product,  id) => (
-                <Link href={`/news`}>
+                <Link href={`/news${id}`}>
                   <BestSellers product={product} />
                 </Link>
               ))}
