@@ -41,8 +41,7 @@ export const imgCaro =[
         shop: "SHOP COLLECTION",
         title: "Tortor eget placerat arcu integer. Lectus fames egestas tincidunt aliquet vivamus nibh lorem nulla. This is Modern fashion ectus fames egestas tncidunt aliquet vivamus nibh lorem nulla."
     },
-]
-  
+] 
 export const brand =[
     {
         image: prr
@@ -60,7 +59,6 @@ export const brand =[
         image: prr
     },
 ]
-
 export const data2 =[
     {
         image: < AiOutlineBook size={30} color="pink"/>,
@@ -91,8 +89,6 @@ export const data2 =[
         title: "At imperdiet dui accumsan sit amet nulla risus est ultricies quis."
     },
 ]
-
-
 export const prod2 =  [
     {
         id:1,
