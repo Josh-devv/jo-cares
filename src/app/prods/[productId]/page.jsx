@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useState } from 'react'
+import { useCart } from '@/components/CartsProvider'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Suscribe from '@/components/Suscribe';
@@ -16,6 +17,15 @@ import m3 from "@/Assets/m3.jpg"
 
 export default function Prods({params}) {
   const { productId } = params;
+  
+  //const { addToCart } = useCart();
+//console.log(addToCart);
+  const handleAddToCart = () => {
+    // Assuming selectedProduct contains the necessary data for the cart
+    //addToCart(selectedProduct);
+    //onsole.log(addToCart);
+  };
+
 
   // Find the selected product based on productId in the desired array
   //by using the productId to access the parameters in each product
@@ -29,7 +39,14 @@ export default function Prods({params}) {
   const { title, price, img } = selectedProduct;
 
   const [mainImage, setMainImage] = useState(img); // Initial main image
+  const [inc, setInc] =useState(1)
 
+  const handleIncrease=()=>{
+    setInc(inc + 1)
+  }
+  const handleDecrease=()=>{
+    setInc(inc - 1)
+  }
   const handleImageClick = (newImage)=>{
     setMainImage(newImage)
   }
@@ -102,9 +119,9 @@ export default function Prods({params}) {
 
                 <div className='flex py-7 items-center'>
                   <div className='p-2 w-[100px] flex justify-between border-black border'>
-                    <span className='text-[20px]'>-</span>
-                    <span className='text-[20px]'>1</span>
-                    <span className='text-[20px]'>+</span>
+                    <span className='text-[20px] cursor-pointer' onClick={handleDecrease}>-</span>
+                    <span className='text-[20px]'>{inc}</span>
+                    <span className='text-[20px] cursor-pointer' onClick={handleIncrease}>+</span>
                   </div>
                   <button className='font-rbt1 bg-black p-3 text-white ml-3'> ADD TO CART</button>
                 </div>

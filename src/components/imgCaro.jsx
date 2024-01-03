@@ -151,32 +151,32 @@ export const prod =  [
     {
         id: 9,
         img: m2,
-        title: "NOTCHED NECKLINE TANK TOP",
+        title: "NOTCHED NECKLINE TOP",
         price: "$99.99"
     },
     {
         id: 10,
         img: m3,
-        title: "ZIP BACK TUBE DENIM TOP",
+        title: "ZIP BACK DENIM TOP",
         price: "$59.00"
     },
     {
         id:11,
         img: m4,
-        title: "SOLID OPEN FRONT COAT",
+        title: "SOLID OPEN COAT",
         price: "$29.00 - $99.99"
     },
     {
         id: 12,
         img: m5,
-        title: "PRIVE SOLID OPEN FRONT COAT",
+        title: "PRIVE FRONT COAT",
         price: "$99.99"
     },
    
     {
         id:13,
         img: m6,
-        title: "OPEN FRONT BLAZER WORKWEAR",
+        title: "FRONT BLAZER WORKWEAR",
         price: "$129.00"
     },/*
     {
