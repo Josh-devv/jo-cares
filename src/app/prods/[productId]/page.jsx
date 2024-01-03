@@ -4,10 +4,12 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Suscribe from '@/components/Suscribe';
+import { IoStarSharp } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci"
 import { prod,prod2, prod3 } from '@/components/imgCaro'
 import { FaFacebook, FaTwitter, FaYoutube, FaBehance } from "react-icons/fa";
 import p2 from "@/Assets/p-038.jpg"
-import p3 from "@/Assets/p-020.jpg"
+import p3 from "@/Assets/star5.png"
 import p4 from "@/Assets/p-019.jpg"
 import m3 from "@/Assets/m3.jpg"
 
@@ -34,27 +36,27 @@ export default function Prods({params}) {
   return (
     <div>
       <Navbar />
-      <div className='h-[20vh] max-sm:h-[12vh]'></div>
+      <div className='h-[20vh] max-sm:h-[12vh]'>
+
+      </div>
       <div className='h-screen  max-md:h-[100%] w-[100%] flex 
           max-md:flex-col justify-evenly items-center' >
             <div className='w-[40%] max-md:w-[100%] max-md:justify-center max-md:h-[100%] h-[100%]'>
                  <div className=' flex max-md:w-[100%]  justify-center items-center  ' data-aos="fade-up" data-aos-duration="500">
-                      <Image src={mainImage} className=' bg-cover obj max-md:w-[90%] max-sm:h-[45vh] h-[80vh]' data-aos="fade-up" data-aos-duration="700" />
+                      <Image src={mainImage} className=' bg-cover obj max-md:w-[95%] max-sm:h-[45vh] h-[80vh]' data-aos="fade-up" data-aos-duration="700" />
                  </div> 
                  <div className='w-[100%] flex justify-center'>
-                    <div className="flex justify-start max-md:w-[90%] py-4 space-x-4">
+                    <div className="flex justify-start max-md:w-[95%] py-4 space-x-4">
                     {/* Thumbnails or smaller images */}
                       <Image
                         src={img}
                         alt="Thumbnail 2"
-                        data-aos="fade-up" data-aos-duration="500"
                         className="w-28 max-sm:w-20 max-sm:h-20 h-28 object-cover cursor-pointer"
                         onClick={() => handleImageClick(img)}/>
                       <Image
                         src={p2}
                         alt="Thumbnail 3"
                         className="w-28 h-28 max-sm:w-20 max-sm:h-20 object-cover cursor-pointer"
-                        data-aos="fade-up" data-aos-duration="500"
                         onClick={() => handleImageClick(p2)}/>
                       <Image
                         src={p4}
@@ -71,9 +73,16 @@ export default function Prods({params}) {
             </div>
               
             <div className='w-[40%] h-[100%] max-md:w-[95%] flex justify-start  flex-col'>
-              <h1 className='text-[40px]  max-sm:text-[25px] font-custom'>{title}</h1>
-                <p></p>
-                <h1 className='text-[40px] max-sm:text-[25px] font-custom'>{price}</h1>
+              <h1 className='text-[45px]  max-sm:text-[25px] font-rbt3'>{title}</h1>
+                <p className='flex'>
+                  <IoStarSharp color='yellow'/>
+                  <IoStarSharp color='yellow'/>
+                  <IoStarSharp color='yellow'/>
+                  <IoStarSharp color='yellow'/>
+                  <IoStarSharp color='yellow'/>
+                  <i className='font-rbt4'> 3 Reviews</i>
+                </p>
+                <h1 className='text-[50px] max-sm:text-[25px] font-rbt3'>{price}</h1>
                 <p className='font-rbt1 py-5 mt-10 border-t border-x-0 border-b-0 border'>
                   Product categories and tags work in much the same way
                   as normal categories and tags you have when writing
@@ -97,9 +106,9 @@ export default function Prods({params}) {
                     <span className='text-[20px]'>1</span>
                     <span className='text-[20px]'>+</span>
                   </div>
-                  <button className='font-rbt1 bg-black p-3 text-white'> ADD TO CART</button>
+                  <button className='font-rbt1 bg-black p-3 text-white ml-3'> ADD TO CART</button>
                 </div>
-                <p className='font-rbt1 text-[13px]'>Add To Wishlist</p>
+                <p className='font-rbt1 text-[13px] flex'><CiHeart />Add To Wishlist</p>
   
                 <div className='flex w-[full] justify-between py-5 font-rbt1 border border-b border-x-0 border-t-0'>
                   <p>DESCRIPTION</p>
@@ -111,7 +120,7 @@ export default function Prods({params}) {
                   dapibus leo.
                 </div>
   
-                <div>
+                <div className='font-rbt2'>
                   Share 
                 <div>
                 <div className="flex w-[20%] justify-evenly">

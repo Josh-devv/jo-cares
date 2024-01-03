@@ -28,8 +28,8 @@ export default function NewArrivals({product}){
             </div> 
           </div>     
 
-          <div className=" flex flex-col font-rbt1">
-            <h1 className="text-[1.3vw] max-lg:text-[1.8vw] font-medium max-md:text-[2.2vw] max-sm:text-[3.3vw]">
+          <div className=" flex flex-col font-rbt4">
+            <h1 className="text-[1.3vw] max-lg:text-[1.8vw] font-bold  max-md:text-[2vw] max-sm:text-[12px]">
               {product.title}
             </h1>
             <p className="text-[1.4vw] font-medium max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">{product.price}</p>             

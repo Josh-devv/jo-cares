@@ -12,6 +12,8 @@ module.exports = {
         rbt: ['Tenor Sans','sans-serif'],
         rbt1: ['Comfortaa','sans-serif'],
         rbt2: ['IBM Plex Mono','sans-serif'],
+        rbt3: ['DM Serif Display','sans-serif'],
+        rbt4: ['Quicksand','sans-serif'],
       },
       screens: {
         'custom-sm': '500px',

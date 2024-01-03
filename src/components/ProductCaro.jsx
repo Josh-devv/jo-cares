@@ -7,12 +7,12 @@ const ProdCaro = ({ children }) => {
     <Carousel
       additionalTransfrom={0}
       autoPlaySpeed={8000}
-      arrows={false}
-      centerMode={false}
+      arrows={true}
+      centerMode={true}
       className=""
       containerClass=""
       dotListClass=""
-      draggable
+      draggable={true}
       autoPlay={false}
       focusOnSelect={false}
       infinite
@@ -26,28 +26,28 @@ const ProdCaro = ({ children }) => {
             max: 3000,
             min: 1024,
           },
-          items: 5,
+          items: 4,
         },
         tablet: {
           breakpoint: {
             max: 1024,
             min: 768,
           },
-          items: 4,
+          items: 3,
         },
         mobile: {
           breakpoint: {
             max: 768,
             min: 480,
           },
-          items: 3,
+          items: 2,
         },
         xsm: {
           breakpoint: {
             max: 480,
             min: 0,
           },
-          items: 2,
+          items: 1,
         },
       }}
       renderArrowsWhenDisabled={false}
