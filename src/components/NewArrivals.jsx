@@ -10,6 +10,7 @@ import BestSellers from "@/components/BestSellers";
 
 
 export default function NewArrivals() {
+  
   const [selectedComponent, setSelectedComponent] = useState("MEN");
   const [select2, setSelect2] = useState(false)
 

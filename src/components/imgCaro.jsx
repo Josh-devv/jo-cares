@@ -12,6 +12,13 @@ import prr1 from "@/Assets/burr.png"
 import prr2 from "@/Assets/loi2.png"
 import p6 from "@/Assets/product-item5.jpg"
 import p7 from "@/Assets/product-item6.jpg"
+import m1 from "@/Assets/m1.jpg"
+import m2 from "@/Assets/man1.jpg"
+import m3 from "@/Assets/man2.jpg"
+import m4 from "@/Assets/man3.jpg"
+import m5 from "@/Assets/man4.jpg"
+import m6 from "@/Assets/man5.jpg"
+
 
 import { AiOutlineBook } from "react-icons/ai";
 import { BsHandbag} from "react-icons/bs";
@@ -134,7 +141,7 @@ export const prod2 =  [
     },
     {
         id:8,
-        img: p3,
+        img: m1,
         title: "NATURAL GLOW",
         price: "$95.00"
     }
@@ -142,35 +149,35 @@ export const prod2 =  [
 export const prod =  [
    
     {
-        id: 1,
-        img: p1,
-        title: "Clean Slate Cream Tee",
-        price: "$30.00"
+        id: 9,
+        img: m2,
+        title: "NOTCHED NECKLINE TANK TOP",
+        price: "$99.99"
     },
     {
-        id: 2,
-        img: p3,
-        title: "Simple white T-shirt",
-        price: "$27.00"
+        id: 10,
+        img: m3,
+        title: "ZIP BACK TUBE DENIM TOP",
+        price: "$59.00"
     },
     {
-        id: 3,
-        img: p4,
-        title: "Essential Black Shirt",
-        price: "$28.00"
+        id:11,
+        img: m4,
+        title: "SOLID OPEN FRONT COAT",
+        price: "$29.00 - $99.99"
     },
     {
-        id: 4,
-        img: p5,
-        title: "Pure Pink Cotton Shirt",
-        price: "$26.00"
+        id: 12,
+        img: m5,
+        title: "PRIVE SOLID OPEN FRONT COAT",
+        price: "$99.99"
     },
    
     {
-        id: 5,
-        img: p4,
-        title: "Clean Slate Cream Tee",
-        price: "$29.00"
+        id:13,
+        img: m6,
+        title: "OPEN FRONT BLAZER WORKWEAR",
+        price: "$129.00"
     },/*
     {
         id: 7,
@@ -195,35 +202,35 @@ export const prod =  [
 export const prod3 =  [
    
     {
-        id: 1,
+        id: 14,
         img: p1,
-        title: "Clean Slate Cream Tee",
-        price: "$30.00"
+        title: "CLEAN SLATE CREAM TEE",
+        price: "$48.00"
     },
     {
-        id: 2,
+        id:15,
         img: p3,
-        title: "Simple white T-shirt",
-        price: "$27.00"
+        title: "SIMPLE WHITE COAT COVER",
+        price: "$127.00"
     },
     {
-        id: 3,
+        id: 16,
         img: p4,
-        title: "Essential Black Shirt",
-        price: "$28.00"
+        title: "ESSENTIAL GRAY CROP SHIRT",
+        price: "$120.00"
     },
     {
-        id: 4,
+        id:17,
         img: p5,
-        title: "Pure Pink Cotton Shirt",
-        price: "$26.00"
+        title: "PURE PINK COTTON SHIRT",
+        price: "$89.00"
     },
    
     {
-        id: 5,
-        img: p4,
-        title: "Clean Slate Cream Tee",
-        price: "$29.00"
+        id: 18,
+        img: m1,
+        title: "CLEAN SLATE COAT COVER",
+        price: "$99.00"
     },/*
     {
         id: 7,
