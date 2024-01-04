@@ -15,8 +15,6 @@ import p3 from "@/Assets/star5.png"
 import p4 from "@/Assets/p-019.jpg"
 import m3 from "@/Assets/m3.jpg"
 import { CartContext } from '@/app/context'
-import PopupMessage from '@/Components/Popup'
-
 
 
 export default function Prods({params}) {
@@ -78,7 +76,10 @@ export default function Prods({params}) {
           <div>
             {
               showPopup ? (
-                <PopupMessage />
+                <div className='fixed top-0 pt-10 w-[100%] left-1/2 text-white h-[20vh] flex justify-center items-end font-rbt transform -translate-x-1/2 -translate-y-1/2 bg-green-400 p-8 rounded shadow-md z-50'>
+                <p>Item has been added to the Cart!!!</p>
+              </div>
+           
               ) : (
                 ""
               )
