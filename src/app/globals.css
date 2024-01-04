@@ -49,9 +49,11 @@ body {
 }
 */
 .types{
-  
+  height: 100%;
   animation: open .2s ease-out forwards;
   width: 100%;
+  position: fixed;
+  scroll-behavior: smooth;
 }
 @keyframes open {
   0%{
@@ -61,6 +63,50 @@ body {
     right: 100%;
   }
 }
+
+.popup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+  
+  width: 100%;
+  position: fixed;
+  color: #000;
+  border-radius: 50px;
+  
+  left: 50%;
+  top: 100%;
+  animation: up 0.3s, ease-in-out forwards, expand 0.3s ease forwards 0.5s down 0.1s ease-in forwards 1.2s;
+}
+@keyframes up {
+  0%{
+    top: 100%;
+  }
+  100%{
+    top:90%;
+  }
+}
+@keyframes expand {
+  0%{
+    width: 50px;
+  }
+  100%{
+    width: 50%;
+    color: black;
+  }
+}
+@keyframes down {
+  0%{
+    top: 90%;
+  }
+  100%{
+    top:100%;
+  }
+}
+
+
 .obj{
   object-fit: cover;
   object-position: center;

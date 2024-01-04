@@ -12,7 +12,7 @@ export default function NewArrivals({product}){
        
        
       <div className="flex max-sm:pt-4 justify-evenly font-rbt1 " data-aos="fade-up" data-aos-duration="500" key={product.id}>
-        <Link href="/prods/[productId]" as={`/prods/${product.title}`}>
+        <Link href="/prods/[productId]" as={`/prods/${product.id}`}>
         <div className=" h-10/12 w-11/12">
           <div className="relative">
             <div className="absolute flex h-full w-full opacity-0 hover:opacity-100 transition-opacity duration-500">

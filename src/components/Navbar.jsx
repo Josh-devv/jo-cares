@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import logo from "../Assets/Logo.svg";
 import shhop from "../Assets/shhop.svg";
 import Search from "../Assets/Search.svg";
@@ -11,14 +11,26 @@ import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
 import { FaCaretDown } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
+import { CartContext, useCart } from "@/app/context";
+import Carts from "@/app/carts/page";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
+  const [cart, setCart] = useState(false);
+
+  const {add, handleRemoveFromCart} = useContext(CartContext)
+  
 
   const handleClick = () => {
     setMenu(!menu);
   };
+  const handleCart = () => {
+    setCart(!cart);
+  };
 
+  const handleRemove=()=>{
+    handleRemoveFromCart
+  }
   useEffect(() => {{
     window.onresize = () => {
         if (window.innerWidth >= 1024) {
@@ -48,7 +60,10 @@ function Navbar() {
     <>
       <section style={{ top: visible ? '0' : '-100px', transition: 'top 0.3s' }}
       className="h-[14vh] max-sm:h-[10vh] bg-transparent fixed w-screen z-50 bg-white text-black  px-10  border-b border-b-black flex items-center justify-center max-sm:px-5">
-        <div className="mr-auto">
+        <div className="mr-auto flex">
+        <div className="hidden max-lg:block ml-auto pr-4 cursor-pointer">
+        <Image src={men} alt=""  onClick={handleClick}/>
+        </div>
           <Image src={logo} alt="" width={120} height={120} />
         </div>
         <ul className="flex justify-evenly font-custom gap-12 text-lg text-bold gap-md-5 max-lg:hidden">
@@ -62,20 +77,24 @@ function Navbar() {
           </li>
           <li className="flex">CONTACT</li>
         </ul>
-        <div className="hidden max-lg:block ml-auto cursor-pointer">
+        <div className="hidden max-lg:hidden ml-auto cursor-pointer">
         <Image src={men} alt=""  onClick={handleClick}/>
         </div>
+        <div className="hidden max-lg:flex ml-auto  cursor-pointer">
+        <Image src={shhop} alt="" onClick={handleCart}/>({add})
+        </div>
+
         <ul className="flex ml-auto justify-between items-center font-sans gap-10 max-md:hidden max-lg:ml-0 pl-5">
           <li className="flex text-lg">
             <PiHeartLight className="" size={27} />
             (0)
           </li>
-          <li className="flex text-lg">
-            <Link href="/carts">
-            <Image src={shhop} alt="" />
-            </Link>
+          <li className="flex text-lg max-md:block">
+            
+            <Image src={shhop} alt="" onClick={handleCart}/>
+            
           
-            (0)
+            ({add})
           </li>
           <li className="flex text">
             <Image src={Search} alt=""  />
@@ -86,35 +105,66 @@ function Navbar() {
          
         </ul>
 
-        <div className={menu ? `types absolute right-0 top-0 z-10` : ''}>
-          <ul className="bg-blue-50 top-0 absolute h-screen shadow-lg right-[-100%] w-10/12 pt-7 pl-20 flex-column max-sm:w-screen max-sm:pl-10">
-            <ul className="flex justify-between pt-0">
-              <li className="text-2xl">MENU</li>
-              <li className="pr-10 cursor-pointer">
+        <div className={menu ? `types  fixed right-0 top-0 z-10` : ''}>
+          <ul className="bg-white top-0 absolute h-screen font-rbt4 font-semibold shadow-lg right-[-100%] w-10/12 pt-7 pl-20 flex-column max-sm:w-screen max-sm:pl-10">
+            <ul className="flex justify-between pt-0 border-b">
+            <li className="pr-10 cursor-pointer">
                 <AiOutlineClose size={25} onClick={handleClick} />
               </li>
+              <div className="flex pr-4 pb-3"><Image src={shhop} alt="" onClick={handleCart}/>
+            
+          
+            ({add})</div>
+             
             </ul>
-            <li className="flex items-center text-lg py-3 pt-16">
+            <li className="flex items-center text-lg py-3 pt-10">
+              <Link href="/">
               HOME
-              <FaCaretDown />
+              </Link>
+              
+              
             </li>
             <li className="flex text-lg items-center  py-3 ">
-              SHOP
-              <FaCaretDown />
+            <Link href="/">
+              SHOP NOW
+              </Link>
             </li>
             <li className="flex text-lg  py-3">CONTACT</li>
             <li className="flex text-lg  py-3">
-              WISHLIST
+            <Link href="/">
+              ABOUT
+              </Link>
             </li>
             <li className="flex text-lg  py-3">
-              ADD TO CART
+            <Link href="/">
+              CONTACT
+              </Link>
             </li>
             <li className="flex text-lg  py-3">
-              PROFILE
+            <Link href="/">
+              LOGIN
+              </Link>
             </li>
             <li className="flex text-lg  py-3">
-              <FiSearch size={22} />
+            <Link href="/">
+              REGISTER
+              </Link>
             </li>
+          </ul>
+        </div>
+
+        <div className={cart ? `types absolute right-0 top-0 z-10` : ''}>
+          <ul className="bg-white top-0 absolute h-screen shadow-lg right-[-100%] w-[40%] max-md:w-[70%] pt-7 pl-10 flex-column max-sm:w-screen max-sm:pl-5">
+          <ul className="flex justify-between pt-0  border-b">
+              <li className="text-2xl pb-4 font-rbt">SHOPPING CART</li>
+              <li className="pr-10 cursor-pointer">
+                <AiOutlineClose size={25} onClick={handleCart} />
+              </li>
+            </ul>
+            <div className="pt-6">
+              <Carts />
+            </div>
+            
           </ul>
         </div>
       

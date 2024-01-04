@@ -15,12 +15,20 @@ import p3 from "@/Assets/star5.png"
 import p4 from "@/Assets/p-019.jpg"
 import m3 from "@/Assets/m3.jpg"
 import { CartContext } from '@/app/context'
+import PopupMessage from '@/Components/Popup'
 
 
 
 export default function Prods({params}) {
   const { productId } = params
   const { cartItems, handleAddToCart } = useContext(CartContext);
+  const [showPopup, setShowPopup] = useState(false);
+
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+    // You can also perform other actions or logic here when the popup is toggled
+  };
   //const { addToCart } = useCart();
   
 
@@ -37,8 +45,14 @@ export default function Prods({params}) {
   const { title, price, img } = selectedProduct;
 
   const itemTo = selectedProduct
+  
   const AddToCart=()=>{
     handleAddToCart(itemTo)
+    setShowPopup(!showPopup);
+
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 2000);
   }
 
   const [mainImage, setMainImage] = useState(img); // Initial main image
@@ -53,20 +67,32 @@ export default function Prods({params}) {
   const handleImageClick = (newImage)=>{
     setMainImage(newImage)
   }
+
+  
   return (
     <div>
       <Navbar />
-      <div className='h-[20vh] max-sm:h-[12vh]'>
-
+     
+      <div className='h-[17vh] max-md:h-[10vh]'>
+          
+          <div>
+            {
+              showPopup ? (
+                <PopupMessage />
+              ) : (
+                ""
+              )
+            }
+          </div>
       </div>
       <div className='h-screen  max-md:h-[100%] w-[100%] flex 
           max-md:flex-col justify-evenly items-center' >
-            <div className='w-[40%] max-md:w-[100%] max-md:justify-center max-md:h-[100%] h-[100%]'>
+            <div className='w-[40%] max-lg:w-[50%] max-md:w-[100%] max-md:justify-center max-md:h-[100%] h-[100%]'>
                  <div className=' flex max-md:w-[100%]  justify-center items-center  ' data-aos="fade-up" data-aos-duration="500">
-                      <Image src={mainImage} className=' bg-cover obj max-md:w-[95%] max-sm:h-[45vh] h-[80vh]' data-aos="fade-up" data-aos-duration="700" />
+                      <Image src={mainImage} className='bg-cover max-md:w-[95%] max-sm:h-[50vh] h-[80vh]' data-aos="fade-up" data-aos-duration="700" />
                  </div> 
                  <div className='w-[100%] flex justify-center'>
-                    <div className="flex justify-start max-md:w-[95%] py-4 space-x-4">
+                    <div className="flex justify-start max-md:w-[95%] py-2 space-x-2">
                     {/* Thumbnails or smaller images */}
                       <Image
                         src={img}
@@ -151,8 +177,11 @@ export default function Prods({params}) {
                 </div>
               </div>
             </div>
-          </div>      
+          </div>     
+
+          
       </div>
+      
       <div className='pt-20'>
         <Suscribe  />
       </div>
