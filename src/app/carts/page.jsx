@@ -1,11 +1,10 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
 import { useCart } from "../context";
 
 export default function Carts(){
-    const { cartItems, handleAddToCart } = useCart()
+    const { cartItems } = useCart()
 
     return(
         <>
