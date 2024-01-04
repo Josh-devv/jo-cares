@@ -1,3 +1,4 @@
+'use client'
 // Create a context to manage the cart data
 import { createContext, useContext, useState } from 'react';
 

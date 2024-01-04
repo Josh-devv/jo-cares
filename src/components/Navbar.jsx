@@ -10,6 +10,7 @@ import { FiSearch } from "react-icons/fi";
 import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
 import { FaCaretDown } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Link from "next/link";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -70,7 +71,10 @@ function Navbar() {
             (0)
           </li>
           <li className="flex text-lg">
-          <Image src={shhop} alt="" />
+            <Link href="/carts">
+            <Image src={shhop} alt="" />
+            </Link>
+          
             (0)
           </li>
           <li className="flex text">

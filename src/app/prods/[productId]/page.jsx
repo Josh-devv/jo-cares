@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import { useContext } from 'react'
 import { useState } from 'react'
 import { useCart } from '@/components/CartsProvider'
 import Image from 'next/image'
@@ -13,18 +14,15 @@ import p2 from "@/Assets/p-038.jpg"
 import p3 from "@/Assets/star5.png"
 import p4 from "@/Assets/p-019.jpg"
 import m3 from "@/Assets/m3.jpg"
+import { CartContext } from '@/app/context'
+
 
 
 export default function Prods({params}) {
-  const { productId } = params;
-  
+  const { productId } = params
+  const { cartItems, handleAddToCart } = useContext(CartContext);
   //const { addToCart } = useCart();
-//console.log(addToCart);
-  const handleAddToCart = () => {
-    // Assuming selectedProduct contains the necessary data for the cart
-    //addToCart(selectedProduct);
-    //onsole.log(addToCart);
-  };
+  
 
 
   // Find the selected product based on productId in the desired array
@@ -37,6 +35,11 @@ export default function Prods({params}) {
   const selectedProduct = findProductById(productId, prod) || findProductById(productId, prod2) || findProductById(productId, prod3);
 
   const { title, price, img } = selectedProduct;
+
+  const itemTo = selectedProduct
+  const AddToCart=()=>{
+    handleAddToCart(itemTo)
+  }
 
   const [mainImage, setMainImage] = useState(img); // Initial main image
   const [inc, setInc] =useState(1)
@@ -123,7 +126,7 @@ export default function Prods({params}) {
                     <span className='text-[20px]'>{inc}</span>
                     <span className='text-[20px] cursor-pointer' onClick={handleIncrease}>+</span>
                   </div>
-                  <button className='font-rbt1 bg-black p-3 text-white ml-3'> ADD TO CART</button>
+                  <button className='font-rbt1 bg-black p-3 text-white ml-3' onClick={AddToCart}> ADD TO CART</button>
                 </div>
                 <p className='font-rbt1 text-[13px] flex'><CiHeart />Add To Wishlist</p>
   

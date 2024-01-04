@@ -1,18 +1,19 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import AOSWrapper from "./AOSWarapper";
-import Link from "next/link";
 import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
+import { useCart } from "../context";
 
+export default function Carts(){
+    const { cartItems, handleAddToCart } = useCart()
 
-export default function NewArrivals({product}){
-    return (
-      <>
-       
-       
-      <div className="flex max-sm:pt-4 justify-evenly font-rbt1 " data-aos="fade-up" data-aos-duration="500" key={product.id}>
-        <Link href="/prods/[productId]" as={`/prods/${product.title}`}>
+    return(
+        <>
+        <div className="flex justify-center items-center w-full flex-col">
+        <div className="w-11/12 pt-4 ">
+{
+    cartItems.map((product)=>(
+        <div className="flex max-sm:pt-4 justify-evenly font-rbt1 " data-aos="fade-up" data-aos-duration="500" key={product.id}>        
         <div className=" h-10/12 w-11/12">
           <div className="relative">
             <div className="absolute flex h-full w-full opacity-0 hover:opacity-100 transition-opacity duration-500">
@@ -34,10 +35,12 @@ export default function NewArrivals({product}){
             </h1>
             <p className="text-[1.4vw] font-medium max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">{product.price}</p>             
           </div>
-        </div></Link>
+        </div>
       </div>
-      
-      </>
-      
-    );
+    ))
+}
+</div>
+</div>
+        </>
+    )
 }
