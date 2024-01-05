@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useCart } from "../context";
 
 export default function Carts(){
-    const { cartItems } = useCart()
+    const { cartItems, inc } = useCart()
+
 
     return(
         <>
@@ -22,7 +23,7 @@ export default function Carts(){
             <h1 className="text-[1.1vw] max-lg:text-[1.8vw] font-[500px] max-md:text-[2vw] max-sm:text-[12px]">
               {product.title}
             </h1>
-            <p className="text-[1.4vw] font-medium max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">{product.price}</p>             
+            <p className="text-[1.4vw] font-medium max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">{inc}{product.price}</p>             
           </div>
         </div>
       </div>

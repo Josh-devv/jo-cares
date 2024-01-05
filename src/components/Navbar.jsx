@@ -156,7 +156,7 @@ function Navbar() {
         <div className={cart ? `types absolute right-0 top-0 z-10` : ''}>
           <ul className="bg-white top-0 absolute h-screen shadow-lg right-[-100%] w-[40%] max-md:w-[70%] pt-7 pl-10 flex-column max-sm:w-screen max-sm:pl-5">
           <ul className="flex justify-between pt-0  border-b">
-              <li className="text-2xl pb-4 font-rbt">SHOPPING CART</li>
+              <li className="text-2xl pb-4 font-rbt">SHOPPING CART  <span className="bg-black p-1 px-3 text-white rounded-full"> {add}</span></li>
               <li className="pr-10 cursor-pointer">
                 <AiOutlineClose size={25} onClick={handleCart} />
               </li>

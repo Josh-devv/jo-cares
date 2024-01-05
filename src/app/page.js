@@ -57,14 +57,14 @@ export default function Home() {
              max-custom-sm3:text-[35px] font-custom text-[60px] w-full">UP TO 45% OFFERS
           </h1>
 
-          <p className="text-white font-rbt2 max-md:text-center max-md:w-[100%] text-[20px] 
-            max-sm:text-[15px] w-10/12">
+          <p className="text-white font-custom max-md:text-center max-md:w-[100%] text-[20px] 
+            max-sm:text-[13px] w-10/12">
             A fashion store is a retail establishment that specializes in clothing and
             accessories. Fashion stores can range from small boutiques to large department stores and
             can sell wide range
           </p>
 
-          <div className="flex font-custom justify-between max-md:justify-center max-md:w-[100%] 
+          <div className="flex max-sm:hidden font-custom justify-between max-md:justify-center max-md:w-[100%] 
             max-custom-sm3:flex-nowrap flex-wrap pt-10 w-10/12 max-custom-sm3:w-3/5">
             <span className="rounded-full hover:bg-white hover:text-black transition-opacity 
               duration-500 h-32 max-lg:h-24 max-lg:w-24 text-center max-sm:text-[15px] text-[20px]
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
           
           <button className="p-4 max-sm:p-3 border-2 w-[200px] mt-5 max-sm:text-[15px] 
-           border-white max-md:m-auto max-md:my-4 rounded-full flex justify-between
+           border-white max-md:m-auto max-md:my-4 rounded-md flex justify-between
             items-center max-sm:bg-black max-sm:text-white font-rbt1">
               SHOP NOW 
               <BsArrowRight size={40} className="bg-white rounded-full text-black max-sm:text-black" 

@@ -19,18 +19,19 @@ function Home() {
               style={{lineHeight:"110px"}}>
               THE <i>SPRING </i>COLLECTION
           </h1>
-          <h1 data-aos="fade-up" data-aos-duration="500" className="text-[90px] max-md-block
+
+          <h1 data-aos="fade-up" data-aos-duration="500" className="text-[90px] max-md:block
               max-lg:text-[70px] max-sm:text-white max-custom-sm2:text-[38px] max-sm:z-10 
-              max-custom-sm:text-[48px] max-md:text-[70px] hidden w-[5vw] font-rbt3"
+              max-custom-sm:text-[49px] max-md:text-[70px] hidden  w-[5vw] font-rbt3"
               style={{lineHeight:"70px"}}>
               THE <i>SPRING </i>COLLECTION
           </h1>
           
-          <button className="p-4 max-sm:p-3 border-2 w-[200px]  max-sm:text-[17px] max-sm:z-50
+          <button className="p-4 max-sm:p-2 border-2 w-[200px] max-sm:w-[180px]  max-sm:text-[17px] max-sm:z-50
              rounded-md flex justify-between
-              items-center max-sm:bg-white max-sm:text-black font-rbt3">
+              items-center  max-sm:bg-white max-sm:text-black font-rbt3">
               SHOP NOW 
-              <BsArrowRight size={45} className="bg-black rounded-full
+              <BsArrowRight size={44} className="bg-black rounded-full
                 text-white max-sm:text-black max-sm:bg-white" style={{padding:"13px"}} />
           </button>
           </div>

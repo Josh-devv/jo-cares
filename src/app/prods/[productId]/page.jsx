@@ -19,7 +19,7 @@ import { CartContext } from '@/app/context'
 
 export default function Prods({params}) {
   const { productId } = params
-  const { cartItems, handleAddToCart } = useContext(CartContext);
+  const { cartItems, handleAddToCart, inc, setInc } = useContext(CartContext);
   const [showPopup, setShowPopup] = useState(false);
 
 
@@ -50,11 +50,11 @@ export default function Prods({params}) {
 
     setTimeout(() => {
       setShowPopup(false);
-    }, 2000);
+    }, 1000);
   }
 
   const [mainImage, setMainImage] = useState(img); // Initial main image
-  const [inc, setInc] =useState(1)
+  //const [inc, setInc] =useState(1)
 
   const handleIncrease=()=>{
     setInc(inc + 1)
