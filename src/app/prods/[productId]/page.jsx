@@ -39,7 +39,7 @@ export default function Prods({params}) {
 
     // Check in different arrays until the product is found
   const selectedProduct = findProductById(productId, prod) || findProductById(productId, prod2) || findProductById(productId, prod3);
-
+  
   const { title, price, img } = selectedProduct;
 
   const itemTo = selectedProduct
@@ -129,7 +129,7 @@ export default function Prods({params}) {
                   <IoStarSharp color='yellow'/>
                   <i className='font-rbt4'> 3 Reviews</i>
                 </p>
-                <h1 className='text-[50px] max-sm:text-[25px] font-rbt3'>{price}</h1>
+                <h1 className='text-[50px] max-sm:text-[25px] font-rbt3'>${price}</h1>
                 <p className='font-rbt1 py-5 mt-10 border-t border-x-0 border-b-0 border'>
                   Product categories and tags work in much the same way
                   as normal categories and tags you have when writing

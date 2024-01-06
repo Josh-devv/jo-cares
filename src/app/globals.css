@@ -52,7 +52,7 @@ body {
   height: 100%;
   animation: open .2s ease-out forwards;
   width: 100%;
-  position: fixed;
+  
   scroll-behavior: smooth;
 }
 @keyframes open {

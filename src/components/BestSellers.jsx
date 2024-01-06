@@ -24,15 +24,15 @@ export default function NewArrivals({product}){
               </div>
             </div>
             <div className="w-full ">
-              <Image src={product.img} className="opacity-100 w-full border-black border max-sm:w-[170px] bg-cover" alt="" />
+              <Image src={product.img} className="opacity-100 w-full border-black border  bg-cover" alt="" />
             </div> 
           </div>     
 
-          <div className=" flex flex-col font-rbt4">
-            <h1 className="text-[1.3vw] max-lg:text-[1.8vw] font-semibold  max-md:text-[2vw] max-sm:text-[12px]">
+          <div className=" flex flex-col font-rbt1">
+            <h1 className="text-[1.3vw] max-lg:text-[1.8vw]   max-md:text-[2vw] max-sm:text-[15px]">
               {product.title}
             </h1>
-            <p className="text-[1.4vw] font-semibold max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">{product.price}</p>             
+            <p className="text-[1.4vw]  max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[3.2vw]">${product.price}</p>             
           </div>
         </div></Link>
       </div>
