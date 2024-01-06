@@ -100,25 +100,25 @@ export const prod2 =  [
     {
         id:1,
         img: p2,
-        title: "LUNE SOLID OPEN FRONT BLAZER",
+        title: "SOLID OPEN FRONT BLAZER",
         price: 159.99
     },
     {
         id:2,
         img: p1,
-        title: "PANTS SUIT WITHOUT CAMI TOP",
+        title: "PANTS SUIT CAMI TOP",
         price: 99.99
     },
     {
         id:3,
         img: p3,
-        title: "LAPEL NECK DOUBLE BREASTED BLAZER",
+        title: "LAPEL BREASTED BLAZER",
         price: 79.99
     },
     {
         id:4,
         img: p4,
-        title: "SOLID NOTCH NECK BLAZER",
+        title: "SOLID NECK BLAZER",
         price: 99.99
     },
     {
@@ -151,13 +151,13 @@ export const prod =  [
     {
         id: 9,
         img: m2,
-        title: "NOTCHED NECKLINE TOP",
+        title: "NOTCHED DENIM",
         price: 99.99
     },
     {
         id: 10,
         img: m3,
-        title: "ZIP BACK DENIM TOP",
+        title: "ZIP DENIM TOP",
         price: 59.00
     },
     {
@@ -176,7 +176,7 @@ export const prod =  [
     {
         id:13,
         img: m6,
-        title: "FRONT BLAZER WORKWEAR",
+        title: "FRONT BLAZER WEAR",
         price: 129.00
     },/*
     {

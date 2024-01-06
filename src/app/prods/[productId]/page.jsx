@@ -90,7 +90,7 @@ export default function Prods({params}) {
           max-md:flex-col justify-evenly items-center' >
             <div className='w-[40%] max-lg:w-[50%] max-md:w-[100%] max-md:justify-center max-md:h-[100%] h-[100%]'>
                  <div className=' flex max-md:w-[100%]  justify-center items-center  ' data-aos="fade-up" data-aos-duration="500">
-                      <Image src={mainImage} className='bg-cover max-md:w-[95%] max-sm:h-[50vh] h-[80vh]' data-aos="fade-up" data-aos-duration="700" />
+                      <Image src={mainImage} className='obj max-md:w-[95%] max-sm:h-[60vh] h-[80vh]' data-aos="fade-up" data-aos-duration="700" />
                  </div> 
                  <div className='w-[100%] flex justify-center'>
                     <div className="flex justify-start max-md:w-[95%] py-2 space-x-2">
@@ -98,22 +98,22 @@ export default function Prods({params}) {
                       <Image
                         src={img}
                         alt="Thumbnail 2"
-                        className="w-28 max-sm:w-20 max-sm:h-20 h-28 object-cover cursor-pointer"
+                        className="w-28 max-sm:w-20 max-sm:h-20 h-28 bg-cover cursor-pointer"
                         onClick={() => handleImageClick(img)}/>
                       <Image
                         src={p2}
                         alt="Thumbnail 3"
-                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 object-cover cursor-pointer"
+                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
                         onClick={() => handleImageClick(p2)}/>
                       <Image
                         src={p4}
                         alt="Thumbnail 4"
-                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 object-cover cursor-pointer"
+                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
                         onClick={() => handleImageClick(p4)}/>
                       <Image
                         src={m3}
                         alt="Thumbnail 4"
-                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 object-cover cursor-pointer"
+                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
                         onClick={() => handleImageClick(m3)}/>
                     </div>
                  </div>
@@ -129,8 +129,8 @@ export default function Prods({params}) {
                   <IoStarSharp color='yellow'/>
                   <i className='font-rbt4'> 3 Reviews</i>
                 </p>
-                <h1 className='text-[50px] max-sm:text-[25px] font-rbt3'>${price}</h1>
-                <p className='font-rbt1 py-5 mt-10 border-t border-x-0 border-b-0 border'>
+                <h1 className='text-[50px] max-sm:text-[35px] font-rbt3'>${price}</h1>
+                <p className='font-rbt5 py-5 mt-10 border-t border-x-0 border-b-0 border'>
                   Product categories and tags work in much the same way
                   as normal categories and tags you have when writing
                   posts in WordPress. They can be created, edited, and
@@ -153,7 +153,7 @@ export default function Prods({params}) {
                     <span className='text-[20px]'>{inc}</span>
                     <span className='text-[20px] cursor-pointer' onClick={handleIncrease}>+</span>
                   </div>
-                  <button className='font-rbt1 bg-black p-3 text-white ml-3' onClick={AddToCart}> ADD TO CART</button>
+                  <button className='font-rbt5 bg-black p-3 text-white ml-3' onClick={AddToCart}> ADD TO CART</button>
                 </div>
                 <p className='font-rbt1 text-[13px] flex'><CiHeart />Add To Wishlist</p>
   
@@ -161,7 +161,7 @@ export default function Prods({params}) {
                   <p>DESCRIPTION</p>
                   <p>REVIEWS(3)</p>
                 </div>
-                <div className='py-5 font-rbt1'>
+                <div className='py-5 font-rbt5'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
                   dapibus leo.

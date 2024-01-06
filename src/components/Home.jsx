@@ -28,8 +28,8 @@ function Home() {
           </h1>
           
           <button className="p-4 max-sm:p-2 border-2 w-[200px] max-sm:w-[180px]  max-sm:text-[17px] max-sm:z-50
-             rounded-md flex justify-between
-              items-center  max-sm:bg-white max-sm:text-black font-rbt3">
+             rounded-md flex justify-between 
+              items-center  max-sm:bg-white  max-sm:text-black font-rbt3">
               SHOP NOW 
               <BsArrowRight size={44} className="bg-black rounded-full
                 text-white max-sm:text-black max-sm:bg-white" style={{padding:"13px"}} />

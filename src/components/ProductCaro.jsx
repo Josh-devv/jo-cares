@@ -9,7 +9,7 @@ const ProdCaro = ({ children }) => {
       autoPlaySpeed={8000}
       arrows={true}
       centerMode={true}
-      className=""
+      className="z-10"
       containerClass=""
       dotListClass=""
       draggable={true}

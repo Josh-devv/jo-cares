@@ -14,6 +14,7 @@ module.exports = {
         rbt2: ['IBM Plex Mono','sans-serif'],
         rbt3: ['DM Serif Display','sans-serif'],
         rbt4: ['Quicksand','sans-serif'],
+        rbt5: ['Poppins','sans-serif'],
       },
       screens: {
         'custom-sm': '500px',

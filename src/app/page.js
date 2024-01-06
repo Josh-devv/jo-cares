@@ -57,7 +57,7 @@ export default function Home() {
              max-custom-sm3:text-[35px] font-custom text-[60px] w-full">UP TO 45% OFFERS
           </h1>
 
-          <p className="text-white font-custom max-md:text-center max-md:w-[100%] text-[20px] 
+          <p className="text-white font-rbt5 max-md:text-center max-md:w-[100%] text-[20px] 
             max-sm:text-[13px] w-10/12">
             A fashion store is a retail establishment that specializes in clothing and
             accessories. Fashion stores can range from small boutiques to large department stores and
