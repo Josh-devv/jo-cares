@@ -5,6 +5,7 @@ import logo from "../Assets/Logo.svg";
 import dhl from "../Assets/dhl-logo.png";
 import visa from "../Assets/visa-card.png";
 import { FaFacebook, FaTwitter, FaYoutube, FaBehance } from "react-icons/fa";
+
 export default function Suscribe(){
     return (
       <>

@@ -1,8 +1,9 @@
 'use client'
+import React, { useRef } from "react";
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import logo from "../Assets/Logo.svg";
-import React, { useRef } from "react";
+
 import shhop from "../Assets/shhop.svg";
 import Search from "../Assets/Search.svg";
 import men from "../Assets/Menu.svg";

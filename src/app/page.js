@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import Navbar from '@/components/Navbar'
+import Navbar from '@/app/Navbar'
 import Homep from '@/components/Home'
 import sImg from "@/Assets/ban2.png"
 import NewArrivals from "@/components/NewArrivals";
@@ -9,7 +9,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import MenW from "@/components/MenW";
 import Brands from "@/components/Brands";
-import Suscribe from "@/components/Suscribe";
+import Suscribe from "@/app/Suscribe";
 import AOSWarapper from "@/components/AOSWarapper";
 
 export default function Home() {

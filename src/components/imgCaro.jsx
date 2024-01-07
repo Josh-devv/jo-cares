@@ -210,7 +210,7 @@ export const prod3 =  [
     {
         id:15,
         img: p3,
-        title: "SIMPLE WHITE COAT COVER",
+        title: "SIMPLE WHITE COAT ",
         price: 127.00
     },
     {

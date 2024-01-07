@@ -1,10 +1,12 @@
 'use client'
-import React from "react";
+
+//import Suscribe from "@/Components/Suscribe";
 import { useContext } from "react";
-import Navbar from "@/Components/Navbar";
-//import { useCart } from "@/app/context";
 import { CartContext, useCart } from "@/app/context";
-import Suscribe from "@/Components/Suscribe";
+import Navbar from "@/app/Navbar";
+import Suscribe from "@/app/Suscribe";
+
+
 
 export default function Checkout({params}){
 
@@ -14,7 +16,7 @@ export default function Checkout({params}){
     return(
         <>
         <div className="h-[10vh]">
-           <Navbar/> 
+          <Navbar />
         </div>
             
             <div className="h-[50vh] max-sm:h-[20vh] bg-gray-100 flex justify-center items-center">
@@ -32,7 +34,7 @@ export default function Checkout({params}){
             <div className="mt-10 flex justify-center items-center font-rbt5 w-[100%]">
                 <div className="w-[90%] flex max-lg:flex-col">
                     <div className="w-[50%] max-lg:w-[100%]">
-                        <div>BILLING DETAILS</div>
+                        <div className="font-bold">BILLING DETAILS</div>
                         <form>
                         <div className="mb-8 flex">
                         <div className="w-1/2 mr-2">
@@ -145,7 +147,7 @@ export default function Checkout({params}){
                    
                    
                     <div className="w-[50%]  max-lg:w-[100%]  font-rbt5">
-                    
+                    <div className="flex w-[38%] font-bold justify-end">YOUR ORDERS</div>
                         <div className="flex w-[100%] flex-col items-end max-lg:items-start">
                             
                             <div className="flex border justify-between max-lg:w-[100%] w-[80%] bg-white">

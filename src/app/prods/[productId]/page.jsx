@@ -4,8 +4,8 @@ import { useContext } from 'react'
 import { useState } from 'react'
 import { useCart } from '@/components/CartsProvider'
 import Image from 'next/image'
-import Navbar from '@/components/Navbar'
-import Suscribe from '@/components/Suscribe';
+import Navbar from '@/app/Navbar'
+import Suscribe from '@/app/Suscribe';
 import { IoStarSharp } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci"
 import { prod,prod2, prod3 } from '@/components/imgCaro'
