@@ -86,41 +86,41 @@ export default function Prods({params}) {
             }
           </div>
       </div>
-      <div className='h-screen  max-md:h-[100%] w-[100%] flex 
-          max-md:flex-col justify-evenly items-center' >
+      <div className='h-[100%]  max-md:h-[100%] w-[100%] flex 
+          max-md:flex-col justify-evenly items-start max-md:items-center' >
             <div className='w-[40%] max-lg:w-[50%] max-md:w-[100%] max-md:justify-center max-md:h-[100%] h-[100%]'>
                  <div className=' flex max-md:w-[100%]  justify-center items-center  ' data-aos="fade-up" data-aos-duration="500">
-                      <Image src={mainImage} className='obj max-md:w-[95%] max-sm:h-[60vh] h-[80vh]' data-aos="fade-up" data-aos-duration="700" />
+                      <Image src={mainImage} className='obj max-md:w-[90%] max-lg:h-[70vh] max-sm:h-[70vh] h-[100vh]' data-aos="fade-up" data-aos-duration="700" />
                  </div> 
                  <div className='w-[100%] flex justify-center'>
-                    <div className="flex justify-start max-md:w-[95%] py-2 space-x-2">
+                    <div className="flex justify-start max-md:w-[90%] py-2 space-x-2">
                     {/* Thumbnails or smaller images */}
                       <Image
                         src={img}
                         alt="Thumbnail 2"
-                        className="w-28 max-sm:w-20 max-sm:h-20 h-28 bg-cover cursor-pointer"
+                        className="w-32 max-lg:w-28 max-lg:h-28 max-sm:w-20 max-sm:h-20 h-32 bg-cover cursor-pointer"
                         onClick={() => handleImageClick(img)}/>
                       <Image
                         src={p2}
                         alt="Thumbnail 3"
-                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
+                        className="w-32 h-32 max-lg:w-28 max-lg:h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
                         onClick={() => handleImageClick(p2)}/>
                       <Image
                         src={p4}
                         alt="Thumbnail 4"
-                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
+                        className="w-32 h-32 max-lg:w-28 max-lg:h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
                         onClick={() => handleImageClick(p4)}/>
                       <Image
                         src={m3}
                         alt="Thumbnail 4"
-                        className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
+                        className="w-32 h-32 max-lg:w-28 max-lg:h-28 max-sm:w-20 max-sm:h-20 bg-cover cursor-pointer"
                         onClick={() => handleImageClick(m3)}/>
                     </div>
                  </div>
             </div>
               
-            <div className='w-[40%] h-[100%] max-md:w-[95%] flex justify-start  flex-col'>
-              <h1 className='text-[45px]  max-sm:text-[25px] font-rbt3'>{title}</h1>
+            <div className='w-[40%] h-[100%] justify-center max-md:w-[90%] flex  flex-col'>
+              <h1 className='text-[48px] max-lg:text-[40px]  max-sm:text-[25px] font-rbt3'>{title}</h1>
                 <p className='flex'>
                   <IoStarSharp color='yellow'/>
                   <IoStarSharp color='yellow'/>
@@ -129,7 +129,7 @@ export default function Prods({params}) {
                   <IoStarSharp color='yellow'/>
                   <i className='font-rbt4'> 3 Reviews</i>
                 </p>
-                <h1 className='text-[50px] max-sm:text-[35px] font-rbt3'>${price}</h1>
+                <h1 className='text-[50px] max-lg:text-[40px] max-sm:text-[35px] font-rbt3'>${price}</h1>
                 <p className='font-rbt5 py-5 mt-10 border-t border-x-0 border-b-0 border'>
                   Product categories and tags work in much the same way
                   as normal categories and tags you have when writing
@@ -161,7 +161,7 @@ export default function Prods({params}) {
                   <p>DESCRIPTION</p>
                   <p>REVIEWS(3)</p>
                 </div>
-                <div className='py-5 font-rbt5'>
+                <div className='py-5 font-rbt5 '>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
                   dapibus leo.

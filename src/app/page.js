@@ -22,7 +22,7 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const countdownDate = new Date('2024-01-01').getTime(); // Set the target date here
+    const countdownDate = new Date('2023-05-01').getTime(); // Set the target date here
       const interval = setInterval(() => {
         const now = new Date().getTime();
         const distance = countdownDate - now;
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="text-white relative max-custom-sm3:p-3 flex flex-col justify-center items-start
           w-[50%] max-custom-sm3:w-[100%]">
           <h1 className="text-white  max-md:text-center max-xl:text-[50px] max-lg:text-[40px]
-             max-custom-sm3:text-[35px] font-custom text-[60px] w-full">UP TO 45% OFFERS
+             max-custom-sm3:text-[35px] font-rbt3 text-[60px] w-full">UP TO 45% OFFERS
           </h1>
 
           <p className="text-white font-rbt5 max-md:text-center max-md:w-[100%] text-[20px] 
@@ -64,30 +64,30 @@ export default function Home() {
             can sell wide range
           </p>
 
-          <div className="flex max-sm:hidden font-custom justify-between max-md:justify-center max-md:w-[100%] 
+          <div className="flex max-sm:hidden font-rbt3 justify-between max-md:justify-center max-md:w-[100%] 
             max-custom-sm3:flex-nowrap flex-wrap pt-10 w-10/12 max-custom-sm3:w-3/5">
             <span className="rounded-full hover:bg-white hover:text-black transition-opacity 
-              duration-500 h-32 max-lg:h-24 max-lg:w-24 text-center max-sm:text-[15px] text-[20px]
+              duration-500 h-32 max-lg:h-24 max-lg:w-24 text-center max-sm:text-[15px] text-[40px] flex-col
               max-sm:h-20 max-sm:w-20 w-32 border flex justify-center items-center">
-                {countdown.days}<br/> DAYS
+                {countdown.days}<br/>  <p className="text-[13px]">DAYS</p>
             </span>
 
             <span className="rounded-full  hover:bg-white hover:text-black transition-opacity 
-              duration-500 text-center h-32 max-lg:h-24 max-lg:w-24 max-sm:text-[15px] text-[20px]
+              duration-500 text-center h-32 max-lg:h-24  max-lg:w-24 max-sm:text-[15px] flex-col text-[40px]
               max-sm:h-20 max-sm:w-20 w-32 border flex justify-center items-center">
-                {countdown.hours}<br/> HOURS
+                {countdown.hours}<br/> <p className="text-[13px]">HOURS</p>
             </span>
 
             <span className="rounded-full  hover:bg-white hover:text-black transition-opacity
-              duration-500 h-32  text-[20px] text-center max-lg:h-24 max-sm:text-[15px] max-lg:w-24
+              duration-500 h-32  text-[40px] flex-col text-center max-lg:h-24 max-sm:text-[15px] max-lg:w-24
               max-sm:h-20 max-sm:w-20 w-32 border flex justify-center items-center">
-                {countdown.minutes}<br/> MINS
+                {countdown.minutes}<br/>  <p className="text-[13px]">MINS</p>
             </span> 
 
             <span className="rounded-full  hover:bg-white hover:text-black transition-opacity 
-              duration-500 h-32  text-[20px] text-center max-lg:h-24 max-sm:text-[15px] max-lg:w-24 
+              duration-500 h-32  text-[40px] flex-col text-center max-lg:h-24 max-sm:text-[15px] max-lg:w-24 
               max-sm:h-20 max-sm:w-20 w-32 border flex justify-center items-center">
-                {countdown.seconds}<br/> SECS
+                {countdown.seconds}<br/>  <p className="text-[13px]">SECS</p>
             </span>
           </div>
           

@@ -171,7 +171,7 @@ function Navbar() {
         </div>
 
         <div ref={contentRef} onScroll={handleScroll} className={cart ? `types  absolute right-0 top-0 z-50` : ''}>
-          <div className="fixed h-[100vh] w-[100%]">
+          <div className="h-[100vh] w-[100%]">
           <ul    className="bg-white top-0  absolute h-screen shadow-lg right-[-100%] flex flex-col w-[40%] max-md:w-[70%] pt-7 pl-10 flex-column max-sm:w-screen max-sm:pl-5">
           <ul className="flex justify-between pt-0  border-b">
               <li className="text-2xl pb-4 font-rbt">SHOPPING CART  <span className="bg-black p-1 px-3 text-white rounded-full"> {add}</span></li>
@@ -189,7 +189,10 @@ function Navbar() {
               <div className="text-blue flex w-[100%] mb-5 border-b text-[20px] justify-between font-rbt text-gray-600 font-semibold"><span className="">SUBTOTAL:</span> <span className="pr-5 ">${totalPrice}</span> </div>
               <div className="flex justify-between mb-3 w-[100%] ">
                 <button className="border-black  px-12 py-3 max-sm:text-[15px] max-sm:px-6 border font-rbt font-semibold">VIEW CART</button>
-                <button  className="border-black px-12 py-3 max-sm:text-[15px] max-sm:px-6 text-white bg-black  font-rbt font-semibold border mr-5 ">CHECKOUT</button>
+                <Link href="/checkout/checkout">
+                  <button  className="border-black px-12 py-3 max-sm:text-[15px] max-sm:px-6 text-white bg-black  font-rbt font-semibold border mr-5 ">CHECKOUT</button>
+                </Link>
+                
               </div>
             </div>
           </ul>
