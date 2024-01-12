@@ -98,30 +98,33 @@ export default function NewArrivals() {
       <div className="flex justify-center items-center w-full flex-col">
         <div className="w-11/12 pt-4 ">
           {selectedComponent === "ACCESSORIES" && (
-            <ProdCaro>
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {prod2.map((product,  id) => (<BestSellers product={product} />))}
-            </ProdCaro>
+            </div>
           )}
 
           {selectedComponent === "MEN" && (
-            <ProdCaro>
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {prod.map((product) => (
                 
                 <BestSellers product={product} />
                
               ))}
-            </ProdCaro>
+            </div>
           )}
 
           {selectedComponent === "WOMEN" && (
-            <ProdCaro>
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {prod3.map((product) => (<BestSellers product={product} />))}
-            </ProdCaro>
+            </div>
           )}
         </div>
-        <h1 className="py-2 px-4 mt-10 border border-black font-medium font-rbt max-sm:text-[12px]">
-          VIEW ALL PRODUCTS
-        </h1>
+        <Link href="/shop">
+          <h1 className="py-2 px-4 mt-10 border border-black font-medium font-rbt max-sm:text-[12px]">
+            VIEW ALL PRODUCTS
+          </h1>
+        </Link>
+        
       </div>
     </div>
   );

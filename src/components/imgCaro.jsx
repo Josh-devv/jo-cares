@@ -172,6 +172,24 @@ export const prod =  [
         title: "PRIVE FRONT COAT",
         price: 99.99
     },
+    {
+        id: 12,
+        img: m5,
+        title: "PRIVE FRONT COAT",
+        price: 99.99
+    },
+    {
+        id: 12,
+        img: m5,
+        title: "PRIVE FRONT COAT",
+        price: 99.99
+    },
+    {
+        id: 12,
+        img: m5,
+        title: "PRIVE FRONT COAT",
+        price: 99.99
+    },
    
     {
         id:13,
@@ -225,6 +243,24 @@ export const prod3 =  [
         title: "PURE PINK COTTON SHIRT",
         price: 89.00
     },
+    {
+        id:17,
+        img: p5,
+        title: "PURE PINK COTTON SHIRT",
+        price: 89.00
+    },
+    {
+        id:17,
+        img: p5,
+        title: "PURE PINK COTTON SHIRT",
+        price: 89.00
+    },
+    {
+        id:17,
+        img: p5,
+        title: "PURE PINK COTTON SHIRT",
+        price: 89.00
+    },
    
     {
         id: 18,
@@ -253,4 +289,105 @@ export const prod3 =  [
     // Add more items as needed
 ];
 
+export const allProd=[
+    {
+        id:1,
+        img: p2,
+        title: "SOLID OPEN FRONT BLAZER",
+        price: 159.99
+    },
+    {
+        id:2,
+        img: p1,
+        title: "PANTS SUIT CAMI TOP",
+        price: 99.99
+    },
+    {
+        id:3,
+        img: p3,
+        title: "LAPEL BREASTED BLAZER",
+        price: 79.99
+    },
+    {
+        id:4,
+        img: p4,
+        title: "SOLID NECK BLAZER",
+        price: 99.99
+    },
+    {
+        id:5,
+        img: p5,
+        title: "SOLID FORM FITTED TEE",
+        price: 49.99
+    },
+   
+    {
+        id:8,
+        img: m1,
+        title: "NATURAL GLOW",
+        price: 95.00
+    },
+    {
+        id: 9,
+        img: m2,
+        title: "NOTCHED DENIM",
+        price: 99.99
+    },
+    {
+        id: 10,
+        img: m3,
+        title: "ZIP DENIM TOP",
+        price: 59.00
+    },
+    {
+        id:11,
+        img: m4,
+        title: "SOLID OPEN COAT",
+        price: 99.99
+    },
+    {
+        id: 12,
+        img: m5,
+        title: "PRIVE FRONT COAT",
+        price: 99.99
+    },
+   
+    {
+        id:13,
+        img: m6,
+        title: "FRONT BLAZER WEAR",
+        price: 129.00
+    },
+    {
+        id: 14,
+        img: p1,
+        title: "CLEAN SLATE CREAM TEE",
+        price: 48.00
+    },
+    {
+        id:15,
+        img: p3,
+        title: "SIMPLE WHITE COAT ",
+        price: 127.00
+    },
+    {
+        id: 16,
+        img: p4,
+        title: "ESSENTIAL GRAY CROP SHIRT",
+        price: 120.00
+    },
+    {
+        id:17,
+        img: p5,
+        title: "PURE PINK COTTON SHIRT",
+        price: 89.00
+    },
+   
+    {
+        id: 18,
+        img: m1,
+        title: "CLEAN SLATE COAT COVER",
+        price: 99.00
+    },
+]
 

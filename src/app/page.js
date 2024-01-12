@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from '@/app/Navbar'
 import Homep from '@/components/Home'
 import sImg from "@/Assets/ban2.png"
@@ -91,13 +92,15 @@ export default function Home() {
             </span>
           </div>
           
-          <button className="p-4 max-sm:p-3 border-2 w-[200px] mt-5 max-sm:text-[15px] 
-           border-white max-md:m-auto max-md:my-4 rounded-md flex justify-between
-            items-center max-sm:bg-black max-sm:text-white font-rbt1">
-              SHOP NOW 
-              <BsArrowRight size={40} className="bg-white rounded-full text-black max-sm:text-black" 
-               style={{padding:"13px"}} />
-          </button>
+          <Link href="/shop">
+            <button className="p-4 max-sm:p-3 border-2 w-[200px] mt-5 max-sm:text-[15px] 
+            border-white max-md:m-auto max-md:my-4 rounded-md flex justify-between
+              items-center max-sm:bg-black max-sm:text-white font-rbt1">
+                SHOP NOW 
+                <BsArrowRight size={40} className="bg-white rounded-full text-black max-sm:text-black" 
+                style={{padding:"13px"}} />
+            </button>
+          </Link>
         </div>
       </section>
       <section>

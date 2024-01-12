@@ -26,14 +26,16 @@ export default function Checkout({params}){
                 </div>
             </div>
 
-            <div className="mt-20 w-[100%] flex justify-center items-center flex-col  text-white font-rbt4">
-                <div className="bg-blue-400 w-[90%] py-6 rounded-md px-3">Returning customer? <span>Click here to login</span></div>
-                <div className="bg-blue-400 w-[90%] py-6 mt-3 rounded-md px-3">Have a coupon? <span>Click here to enter coupon</span></div>
+            <div className="mt-20 max-sm:mt-10 w-[100%] flex justify-center items-center flex-col  text-white font-rbt4">
+                <div className="bg-blue-400 max-sm:py-3 w-[90%] py-6 rounded-md px-3">
+                    Returning customer? <span className="border-b-white border-2 rounded border-x-0 border-t-0">Click here to login</span></div>
+                <div className="bg-blue-400 w-[90%] py-6 max-sm:py-3 mt-3 rounded-md px-3">
+                    Have a coupon? <span className="border-b-white border-2 rounded border-x-0 border-t-0">Click here to enter coupon</span></div>
             </div>
 
             <div className="mt-10 flex justify-center items-center font-rbt5 w-[100%]">
-                <div className="w-[90%] flex max-lg:flex-col">
-                    <div className="w-[50%] max-lg:w-[100%]">
+                <div className="w-[90%] flex max-lg:flex-col-reverse">
+                    <div className="w-[50%] max-lg:pt-10 max-lg:w-[100%]">
                         <div className="font-bold">BILLING DETAILS</div>
                         <form>
                         <div className="mb-8 flex">
@@ -146,25 +148,25 @@ export default function Checkout({params}){
                     </div>
                    
                    
-                    <div className="w-[50%]  max-lg:w-[100%]  font-rbt5">
-                    <div className="flex w-[38%] font-bold justify-end">YOUR ORDERS</div>
+                    <div className="w-[50%]  max-lg:w-[100%]  font-rbt4">
+                    
                         <div className="flex w-[100%] flex-col items-end max-lg:items-start">
                             
                             <div className="flex border justify-between max-lg:w-[100%] w-[80%] bg-white">
                             
-                            <div className="bg-gray-400 w-[50%]">
+                            <div className="bg-gray-400 w-[80%]">
                             
                                 <div className="flex flex-col">
                                 
                                 <div className="font-bold py-8  w-[100%] pl-5">PRODUCT</div>
                                 {cartItems.map((product) => (
-                                    <div className="flex pl-5 justify-between max-sm:pt-4 border-b bg-white py-8 pb-2" key={product.id}>
+                                    <div className="flex pl-5 text-[15px] justify-between max-sm:pt-4 border-b bg-white py-8 pb-2" key={product.id}>
                                     <p>{product.title} * {product.quantity}</p>
                                     </div>
                                 ))}
                                 </div>
                             </div>
-                            <div className="bg-gray-400 w-[50%]">
+                            <div className="bg-gray-400 w-[20%]">
                                 <div className="flex flex-col">
                                 <div className="font-bold py-8 flex justify-end pr-5 w-[100%]">SUBTOTAL</div>
                                 {cartItems.map((product) => (
@@ -185,6 +187,7 @@ export default function Checkout({params}){
                                 <div className="pr-5">${totalPrice}</div>
                             </div>
                             </div>
+                            <button className="bg-black text-white p-3 rounded-md mt-4">PROCEES TO CHECKOUT</button>
                         </div> 
                         </div>
                         

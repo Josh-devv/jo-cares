@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 import home from "@/Assets/m1_slider_01.jpg"
 import home2 from "@/Assets/single-product1.jpg"
 import land from "@/Assets/land2.jpg"
@@ -27,13 +28,15 @@ function Home() {
               THE <i>SPRING </i>COLLECTION
           </h1>
           
-          <button className="p-4 max-sm:p-2 border-2 w-[200px] max-sm:w-[180px]  max-sm:text-[17px] max-sm:z-50
-             rounded-md flex justify-between 
-              items-center  max-sm:bg-white  max-sm:text-black font-rbt3">
-              SHOP NOW 
-              <BsArrowRight size={44} className="bg-black rounded-full
-                text-white max-sm:text-black max-sm:bg-white" style={{padding:"13px"}} />
-          </button>
+          <Link href="/shop">
+            <button className="p-4 max-sm:p-2 border-2 w-[200px] max-sm:w-[180px]  max-sm:text-[17px] max-sm:z-50
+              rounded-md flex justify-between 
+                items-center  max-sm:bg-white  max-sm:text-black font-rbt3">
+                SHOP NOW 
+                <BsArrowRight size={44} className="bg-black rounded-full
+                  text-white max-sm:text-black max-sm:bg-white" style={{padding:"13px"}} />
+            </button>
+          </Link>
           </div>
       </div>
 

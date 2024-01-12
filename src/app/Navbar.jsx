@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import logo from "../Assets/Logo.svg";
-
 import shhop from "../Assets/shhop.svg";
 import Search from "../Assets/Search.svg";
 import men from "../Assets/Menu.svg";
@@ -85,14 +84,18 @@ function Navbar() {
           <Image src={logo} alt="" width={120} height={120} />
         </div>
         <ul className="flex justify-evenly font-custom gap-12 text-lg text-bold gap-md-5 max-lg:hidden">
-          <li className="flex items-center">
-            HOME
-            <FaCaretDown />
-          </li>
-          <li className="flex items-center">
-            SHOP
-            <FaCaretDown />
-          </li>
+          <Link href="/">
+            <li className="flex items-center"> 
+              HOME
+              <FaCaretDown />
+            </li>
+          </Link>
+          <Link href="/shop">
+            <li className="flex items-center">
+              SHOP
+              <FaCaretDown />
+            </li>
+          </Link>
           <li className="flex">CONTACT</li>
         </ul>
         <div className="hidden max-lg:hidden ml-auto cursor-pointer">
