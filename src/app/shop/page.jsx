@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { allProd } from "@/Components/imgCaro";
 import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
-import Navbar from "../Navbar";
-import Suscribe from "../Suscribe";
+import Navbar from "@/app/Navbar";
+import Suscribe from "@/app/Suscribe";
+
 export default function Shop() {
   return (
     <>
