@@ -8,7 +8,7 @@ import Navbar from '@/app/Navbar'
 import Suscribe from '@/app/Suscribe';
 import { IoStarSharp } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci"
-import { prod,prod2, prod3 } from '@/components/imgCaro'
+import { prod,prod2, prod3 } from '@/app/imgCaro'
 import { FaFacebook, FaTwitter, FaYoutube, FaBehance } from "react-icons/fa";
 import p2 from "@/Assets/p-038.jpg"
 import p3 from "@/Assets/star5.png"

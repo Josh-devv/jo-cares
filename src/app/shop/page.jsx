@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import { allProd } from "@/Components/imgCaro";
 import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
+import { allProd } from "@/app/imgCaro";
 import Navbar from "@/app/Navbar";
 import Suscribe from "@/app/Suscribe";
 
