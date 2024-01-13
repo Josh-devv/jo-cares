@@ -139,7 +139,7 @@ function Navbar() {
              
             </ul>
             <li className="flex items-center text-lg py-3 pt-10">
-              <Link href="/">
+              <Link href="/" style={{textDecoration: 'none', color: 'inherit'}}>
               HOME
               </Link>
               

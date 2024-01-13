@@ -144,7 +144,7 @@ export default function Checkout({params}){
                         
                         </div>
                         </form> 
-                        <button className="bg-black text-white p-3 rounded-md mt-4">PROCEES TO CHECKOUT</button>
+                        <button className="bg-black text-white p-3 rounded-md mt-4">PROCEEd TO CHECKOUT</button>
                     </div>
                    
                    

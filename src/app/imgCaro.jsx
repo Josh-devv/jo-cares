@@ -80,7 +80,7 @@ export const prod2 =  [
     {
         id:1,
         img: p2,
-        title: "SOLID OPEN FRONT BLAZER",
+        title: "OPEN FRONT BLAZER",
         price: 159.00
     },
     {
@@ -220,7 +220,7 @@ export const prod3 =  [
     {
         id:21,
         img: new6,
-        title: "PURE BROWN COTTON SHIRT",
+        title: "ESSENTIAL BROWN SHIRT",
         price: 89.00
     },
     {
@@ -232,13 +232,13 @@ export const prod3 =  [
     {
         id:19,
         img: p5,
-        title: "PURE PINK COTTON SHIRT",
+        title: "PURE COTTON SHIRT",
         price: 89.00
     },
     {
         id:17,
-        img: p5,
-        title: "PURE PINK COTTON SHIRT",
+        img: new7,
+        title: "PURE GREY COTTON SHIRT",
         price: 89.00
     },
    
