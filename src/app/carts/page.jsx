@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useCart } from "../context";
 
 export default function Carts(){
-    const { cartItems, inc, add } = useCart()
+    const { cartItems } = useCart()
 
 
     return(
