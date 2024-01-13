@@ -22,7 +22,7 @@ function Navbar() {
   const [login, setLogin] = useState(false);
 
   const contentRef = useRef(null);
-  const {add, handleRemoveFromCart, totalPrice} = useContext(CartContext)
+  const {add, handleRemoveFromCart, totalPrice, logs} = useContext(CartContext)
   
 
   const handleClick = () => {
@@ -125,7 +125,7 @@ function Navbar() {
             <Image src={Search} alt=""  />
           </li>
           <li className="flex text-lg">
-            <PiUserCircleLight size={30} />
+            <PiUserCircleLight size={30} onClick={handleLogin}/>
           </li>
          
         </ul>
@@ -154,10 +154,10 @@ function Navbar() {
               SHOP NOW
               </Link>
             </li>
-            <li className="flex text-lg  py-3">
-            <Link href="/register">
+            <li className="flex text-lg cursor-pointer  py-3" onClick={handleLogin}>
+           
               LOGIN/REGISTER
-              </Link>
+              
             </li>
             
           </ul>
@@ -195,8 +195,8 @@ function Navbar() {
         <div ref={contentRef} onScroll={handleScroll} className={login ? `types  absolute right-0 top-0 z-50` : ''}>
           <div className="h-[100vh] w-[100%]">
           <ul    className="bg-white top-0  absolute h-screen shadow-lg right-[-100%] flex flex-col w-[40%] max-md:w-[70%] pt-7  flex-column max-sm:w-screen max-sm:pl-5">
-          <ul className="flex justify-between pt-0  border-b">
-              <li className="text-2xl pb-4 pl-8 font-rbt">LOGIN</li>
+          <ul className="flex justify-between pt-0  border-b"> 
+            <li className="text-2xl pb-4  pl-8 font-rbt">LOGIN</li>
               <li className="pr-8 cursor-pointer">
                 <AiOutlineClose size={25} onClick={handleLogin} />
               </li>

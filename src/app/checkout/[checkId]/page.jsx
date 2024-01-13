@@ -1,6 +1,7 @@
 'use client'
 
 //import Suscribe from "@/Components/Suscribe";
+import Link from "next/link";
 import { useContext } from "react";
 import { CartContext, useCart } from "@/app/context";
 import Navbar from "@/app/Navbar";
@@ -144,9 +145,8 @@ export default function Checkout({params}){
                         
                         </div>
                         </form> 
-                        <Link href="/register">
-                            <button className="bg-black text-white p-3 rounded-md mt-4">PROCEED TO CHECKOUT</button>
-                        </Link>
+                        
+                            <button  className="bg-black text-white p-3 rounded-md mt-4">PROCEED TO CHECKOUT</button>
                         
                     </div>
                    

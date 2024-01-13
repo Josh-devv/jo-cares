@@ -8,11 +8,15 @@ export default function GlobalState({ children }) {
     const [add, setAdded] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0);
     const [inc, setInc] =useState(1)
+    const [login, setLogin] = useState(false);
 
     const incNum = () => {
         setAdded(add + 1);
       };
 
+      const logs=()=>{
+        setLogin(!login)
+      }
      // const isItemInCart = cartItems.some(cartItem => cartItem.id === item.id);
     
     function handleAddToCart(item) {
@@ -47,7 +51,7 @@ export default function GlobalState({ children }) {
 
 
     return (
-        <CartContext.Provider value={{ cartItems, handleAddToCart, add, handleRemoveFromCart, inc, setInc, totalPrice }}>
+        <CartContext.Provider value={{ cartItems, handleAddToCart, logs, add, handleRemoveFromCart, inc, setInc, totalPrice }}>
             {children}
         </CartContext.Provider>
     );
