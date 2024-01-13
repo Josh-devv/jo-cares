@@ -19,7 +19,7 @@ export default function NewArrivals({product}){
         key={product.id}
       >
         
-        <div className=" h-10/12 w-[100%] border pb-3 border-black">
+        <div className=" h-10/12 w-[100%]  pb-3">
           <div className="relative">
             <div className="absolute flex h-full w-full opacity-0 hover:opacity-100 transition-opacity duration-500">
               <div className=" absolute flex justify-end items-end pr-3 text-white z-50  pt-3 pl-3"><PiHeartLight size={23} className=""/></div>              
@@ -32,21 +32,21 @@ export default function NewArrivals({product}){
               </div>
             </div>
             <div className="w-full ">
-              <Image src={product.img} className="opacity-100 w-full border-black border-b  bg-cover" alt="" />
+              <Image src={product.img} className="opacity-100  border-black border-b  bg-cover" alt="" />
             </div> 
           </div>     
           <Link href="/prods/[productId]" as={`/prods/${product.id}`}>
-            <div className=" flex flex-col w-[100%] font-rbt5 pl-3 pt-3">
-              <h1 className="text-[1.3vw] max-lg:text-[1.8vw]    max-md:text-[2.2vw] max-sm:text-[20px]">
+            <div className=" flex flex-col w-[100%] font-rbt5 pl-3 max-sm:pl-0 pt-3">
+              <h1 className="text-[1.3vw] max-lg:text-[1.8vw]    max-md:text-[2.2vw] max-sm:text-[15px]">
                 {product.title}
               </h1>
-              <p className="text-[1.4vw]  max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[20px]">${product.price}</p> 
+              <p className="text-[1.4vw]  max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[15px]">${product.price}</p> 
               <p className='flex w-[100%]'>
-                    <IoStarSharp color='black'/>
-                    <IoStarSharp color='black'/>
-                    <IoStarSharp color='black'/>
-                    <IoStarSharp color='black'/>
-                    <IoStarSharp color='black'/>
+                    <IoStarSharp color='black' className="max-sm:text-[10px]"/>
+                    <IoStarSharp color='black' className="max-sm:text-[10px]"/>
+                    <IoStarSharp color='black' className="max-sm:text-[10px]"/>
+                    <IoStarSharp color='black' className="max-sm:text-[10px]"/>
+                    <IoStarSharp color='black' className="max-sm:text-[10px]"/>
               </p> 
 
             </div>

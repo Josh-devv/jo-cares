@@ -52,20 +52,20 @@ export default function Home() {
            max-custom-sm3:items-center object-contain" />
         </div>
 
-        <div className="text-white relative max-custom-sm3:p-3 flex flex-col justify-center items-start
+        <div className="text-white relative max-custom-sm3:p-3 flex flex-col justify-center max-sm:items-center
           w-[50%] max-custom-sm3:w-[100%]">
-          <h1 className="text-white  max-md:text-center max-xl:text-[50px] max-lg:text-[40px]
+          <h1 className="text-white  max-lg:text-center max-xl:text-[50px] max-lg:text-[40px]
              max-custom-sm3:text-[35px] font-rbt3 text-[60px] w-full">UP TO 45% OFFERS
           </h1>
 
-          <p className="text-white font-rbt5 max-md:text-center max-md:w-[100%] text-[20px] 
-            max-sm:text-[13px] w-10/12">
+          <p className="text-white font-rbt5 max-lg:text-center max-md:w-[100%] text-[20px] 
+            max-sm:text-[13px] w-[90%]">
             A fashion store is a retail establishment that specializes in clothing and
             accessories. Fashion stores can range from small boutiques to large department stores and
             can sell wide range
           </p>
 
-          <div className="flex max-sm:hidden font-rbt3 justify-between max-md:justify-center max-md:w-[100%] 
+          <div className="flex max-sm:hidden font-rbt3 justify-between  max-md:justify-center max-md:w-[100%] 
             max-custom-sm3:flex-nowrap flex-wrap pt-10 w-10/12 max-custom-sm3:w-3/5">
             <span className="rounded-full hover:bg-white hover:text-black transition-opacity 
               duration-500 h-32 max-lg:h-24 max-lg:w-24 text-center max-sm:text-[15px] text-[40px] flex-col
@@ -95,7 +95,7 @@ export default function Home() {
           <Link href="/shop">
             <button className="p-4 max-sm:p-3 border-2 w-[200px] mt-5 max-sm:text-[15px] 
             border-white max-md:m-auto max-md:my-4 rounded-md flex justify-between
-              items-center max-sm:bg-black max-sm:text-white font-rbt1">
+               max-sm:bg-black max-sm:text-white font-rbt1">
                 SHOP NOW 
                 <BsArrowRight size={40} className="bg-white rounded-full text-black max-sm:text-black" 
                 style={{padding:"13px"}} />

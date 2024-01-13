@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import ProdCaro from "@/components/ProductCaro";
-import { brand, prod } from "./imgCaro";
+import { brand, prod } from "../app/imgCaro";
 
 import BrandCaro from "@/components/BrandCaro";
 

@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { PiUserCircleLight, PiHeartLight } from "react-icons/pi";
 import { allProd } from "@/app/imgCaro";
 import Navbar from "@/app/Navbar";
@@ -9,25 +10,30 @@ import Suscribe from "@/app/Suscribe";
 export default function Shop() {
   return (
     <>
-    <div className="h-[18vh]">
+    <div className="h-[18vh] max-sm:h-[13vh]">
       <Navbar />
     </div>
     <div className="w-[100%] flex justify-center">
-      <div className="grid grid-cols-2 font-rbt1 w-[90%] sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4 gap-y-4 gap-x-10">
+      <div className="grid grid-cols-2 font-rbt1  max-md:gap-x-2 max-sm:w-[95%] w-[90%] sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4 gap-y-4 gap-x-10">
       {allProd.map((product) => (
-        <div className="flex flex-col relative items-center justify-center border border-black " key={product.id}
+        <div className="flex flex-col relative  " key={product.id}
         >
            <div className="absolute flex h-full w-full opacity-0 hover:opacity-100 transition-opacity duration-500">
               <div className=" absolute flex justify-end items-end pr-3 text-white z-50  pt-3 pl-3"><PiHeartLight size={23} className=""/></div>              
-              <div className=" h-[100%] flex justify-center items-center text-white font-rbt   bg-gradient-to-t from-transparent via-black/50 to-black absolute w-full ">
+              <div className=" h-[100%] flex justify-center items-center text-white font-rbt   bg-gradient-to-t from-transparent via-black/20 to-black absolute w-full ">
+              <Link href="/prods/[productId]" as={`/prods/${product.id}`}>
                 <button className="border border-white font-rbt5 p-3">
                   BUY NOW
                 </button>
+              </Link>
               </div>
             </div>
-          <Image src={product.img} className="w-full h-auto mb-2" />
-          <div className=" text-[15px]">{product.title}</div>
-          <div className="pb-3">${product.price}</div>
+          <Image src={product.img} className="w-full max-sm:h-[200px] h-auto mb-2" />
+          <Link href="/prods/[productId]" as={`/prods/${product.id}`}>
+            <div className=" text-[15px] self-start w-[95%] max-sm:text-[13px] max-md:text-[20px]">{product.title}</div>
+            <div className="pb-3">${product.price}</div>
+          </Link>
+          
          
         </div>
       ))}

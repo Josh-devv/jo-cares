@@ -54,11 +54,11 @@ body {
   animation: open .2s ease-out forwards;
   width: 100%;
   
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 @keyframes open {
   0%{
-    right: -100%;
+    top: -100%;
   }
   100%{
     right: 100%;

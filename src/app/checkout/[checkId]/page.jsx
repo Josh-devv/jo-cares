@@ -21,15 +21,14 @@ export default function Checkout({params}){
             
             <div className="h-[50vh] max-sm:h-[20vh] bg-gray-100 flex justify-center items-center">
                 <div>
-                    <div className="text-center font-rbt5 text-[13px]">HOME</div>
                     <div className="text-[50px] font-rbt3">CHECKOUT</div>
                 </div>
             </div>
 
-            <div className="mt-20 max-sm:mt-10 w-[100%] flex justify-center items-center flex-col  text-white font-rbt4">
-                <div className="bg-blue-400 max-sm:py-3 w-[90%] py-6 rounded-md px-3">
+            <div className="mt-20 max-sm:text-[12px] max-sm:mt-10 w-[100%] flex justify-center items-center flex-col  text-white font-rbt4">
+                <div className="bg-blue-400 max-sm:py-2 w-[90%] py-6 rounded-md px-3">
                     Returning customer? <span className="border-b-white border-2 rounded border-x-0 border-t-0">Click here to login</span></div>
-                <div className="bg-blue-400 w-[90%] py-6 max-sm:py-3 mt-3 rounded-md px-3">
+                <div className="bg-blue-400 w-[90%] py-6 max-sm:py-2 mt-3 rounded-md px-3">
                     Have a coupon? <span className="border-b-white border-2 rounded border-x-0 border-t-0">Click here to enter coupon</span></div>
             </div>
 
@@ -145,10 +144,11 @@ export default function Checkout({params}){
                         
                         </div>
                         </form> 
+                        <button className="bg-black text-white p-3 rounded-md mt-4">PROCEES TO CHECKOUT</button>
                     </div>
                    
                    
-                    <div className="w-[50%]  max-lg:w-[100%]  font-rbt4">
+                    <div className="w-[50%]  max-lg:w-[100%] font-rbt4">
                     
                         <div className="flex w-[100%] flex-col items-end max-lg:items-start">
                             
@@ -187,7 +187,7 @@ export default function Checkout({params}){
                                 <div className="pr-5">${totalPrice}</div>
                             </div>
                             </div>
-                            <button className="bg-black text-white p-3 rounded-md mt-4">PROCEES TO CHECKOUT</button>
+                            
                         </div> 
                         </div>
                         

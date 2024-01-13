@@ -1,6 +1,3 @@
-import b1 from "@/Assets/banner-large-image1.png"
-import b2 from "@/Assets/banner-large-image2.jpg"
-import b3 from "@/Assets/last.jpeg"
 import p1 from "@/Assets/blazer.jpg"
 import p2 from "@/Assets/p-038.jpg"
 import p3 from "@/Assets/p-020.jpg"
@@ -10,13 +7,10 @@ import new10 from "@/Assets/stripe.jpg"
 import prr from "@/Assets/prads.png"
 import prr1 from "@/Assets/burr.png"
 import prr2 from "@/Assets/loi2.png"
-import p6 from "@/Assets/product-item5.jpg"
-import p7 from "@/Assets/product-item6.jpg"
 import m1 from "@/Assets/m1.jpg"
 import m2 from "@/Assets/man1.jpg"
 import m3 from "@/Assets/man2.jpg"
 import m4 from "@/Assets/man3.jpg"
-import m5 from "@/Assets/man4.jpg"
 import m6 from "@/Assets/man5.jpg"
 import new1 from "@/Assets/bike.jpg"
 import new2 from "@/Assets/jeans.jpg"
@@ -34,29 +28,7 @@ import { GoGift} from "react-icons/go";
 import { TfiReload} from "react-icons/tfi";
 
 
-export const imgCaro =[
-    {
-        image: b3,
-        id: 1,
-        head: "LUXURY FAST & ACCESSORIES",
-        shop: "EXPLORE COLLECTION",
-        title: "Tortor eget placerat arcu integer. Lectus fames egestas tincidunt aliquet vivamus nibh lorem nulla. This is Modern fashion ectus fames egestas tncidunt aliquet vivamus nibh lorem nulla."
-    },
-    {
-        image: b3,
-        id: 2,
-        head: "SUMMER GLOW",
-        shop: "SHOP COLLECTION",
-        title: "Tortor eget placerat arcu integer. Lectus fames egestas tincidunt aliquet vivamus nibh lorem nulla. This is Modern fashion ectus fames egestas tncidunt aliquet vivamus nibh lorem nulla."
-    },
-    {
-        image: b1,
-        id: 3,
-        head: "SUMMER GLOW",
-        shop: "SHOP COLLECTION",
-        title: "Tortor eget placerat arcu integer. Lectus fames egestas tincidunt aliquet vivamus nibh lorem nulla. This is Modern fashion ectus fames egestas tncidunt aliquet vivamus nibh lorem nulla."
-    },
-] 
+
 export const brand =[
     {
         image: prr

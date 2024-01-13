@@ -83,7 +83,7 @@ function Navbar() {
         </div>
           <Image src={logo} alt="" width={120} height={120} />
         </div>
-        <ul className="flex justify-evenly font-custom gap-12 text-lg text-bold gap-md-5 max-lg:hidden">
+        <ul className="flex font-rbt justify-evenly  gap-12 text-lg text-bold gap-md-5 max-lg:hidden">
           <Link href="/">
             <li className="flex items-center"> 
               HOME
@@ -96,7 +96,7 @@ function Navbar() {
               <FaCaretDown />
             </li>
           </Link>
-          <li className="flex">CONTACT</li>
+          <li className="flex">LOGIN/REGISTER</li>
         </ul>
         <div className="hidden max-lg:hidden ml-auto cursor-pointer">
         <Image src={men} alt=""  onClick={handleClick}/>
@@ -126,8 +126,8 @@ function Navbar() {
          
         </ul>
 
-        <div className={menu ? `types  fixed right-0 top-0 z-10` : ''}>
-          <ul className="bg-white top-0 absolute h-screen font-rbt4 font-semibold shadow-lg right-[-100%] w-10/12 pt-7 pl-20 flex-column max-sm:w-screen max-sm:pl-10">
+        <div className={menu ? `types h-screen fixed  right-0 top-0 z-10` : ''}>
+          <ul className=" top-0 type bg-white h-screen absolute font-rbt4 font-semibold shadow-lg right-[-100%] w-10/12 pt-7 pl-20 flex-column max-sm:w-screen max-sm:pl-10">
             <ul className="flex justify-between pt-0 border-b">
             <li className="pr-10 cursor-pointer">
                 <AiOutlineClose size={25} onClick={handleClick} />
@@ -146,31 +146,16 @@ function Navbar() {
               
             </li>
             <li className="flex text-lg items-center  py-3 ">
-            <Link href="/">
+            <Link href="/shop">
               SHOP NOW
               </Link>
             </li>
-            <li className="flex text-lg  py-3">CONTACT</li>
             <li className="flex text-lg  py-3">
             <Link href="/">
-              ABOUT
+              LOGIN/REGISTER
               </Link>
             </li>
-            <li className="flex text-lg  py-3">
-            <Link href="/">
-              CONTACT
-              </Link>
-            </li>
-            <li className="flex text-lg  py-3">
-            <Link href="/">
-              LOGIN
-              </Link>
-            </li>
-            <li className="flex text-lg  py-3">
-            <Link href="/">
-              REGISTER
-              </Link>
-            </li>
+            
           </ul>
         </div>
 
