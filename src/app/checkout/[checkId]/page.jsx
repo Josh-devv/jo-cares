@@ -178,11 +178,11 @@ export default function Checkout({params}){
                             </div>
                             </div>
                             <div className="flex bg-gray-400 flex-col max-lg:w-[100%] w-[80%] justify-between">
-                            <div className="pl-5 font-bold py-8 flex justify-between bg-gray-200">
+                            <div className="pl-5 font-bold py-8 max-sm:py-4 flex justify-between bg-gray-200">
                                 <div>SUBTOTAL</div>
                                 <div className="pr-5">${totalPrice}</div>
                             </div>
-                            <div className="pl-5 font-bold py-8 flex justify-between bg-gray-400">
+                            <div className="pl-5 font-bold py-8 max-sm:py-4 flex justify-between bg-gray-400">
                                 <div>TOTAL</div>
                                 <div className="pr-5">${totalPrice}</div>
                             </div>
