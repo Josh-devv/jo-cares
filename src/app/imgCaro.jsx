@@ -92,7 +92,7 @@ export const prod2 =  [
     {
         id:3,
         img: p3,
-        title: "LAPEL BREASTED BLAZER",
+        title: "LAPEL BREAST BLAZER",
         price: 79.00
     },
     {
