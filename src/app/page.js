@@ -24,20 +24,25 @@ export default function Home() {
 
   useEffect(() => {
     const countdownDate = new Date('2023-05-01').getTime(); // Set the target date here
-      const interval = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        setCountdown({ days, hours, minutes, seconds });
+    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000; // 365 days in milliseconds
+    const initialTime = countdownDate + oneYearInMilliseconds; // Add instead of subtract
+  
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = initialTime - now;
+  
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+      setCountdown({ days, hours, minutes, seconds });
     }, 1000);
-
+  
     return () => clearInterval(interval);
   }, []);
-
+  
+  
 
   return (
     <div className=" text-black" style={{ fontFamily: "ptserifr", backgroundColor: "" }}>
@@ -94,7 +99,7 @@ export default function Home() {
           
           <Link href="/shop">
             <button className="p-4 max-sm:p-3 border-2 w-[200px] mt-5 max-sm:text-[15px] 
-            border-white max-md:m-auto max-md:my-4 rounded-md flex justify-between
+            border-white max-md:m-auto max-md:my-4 rounded-md flex justify-between items-center
                max-sm:bg-black max-sm:text-white font-rbt1">
                 SHOP NOW 
                 <BsArrowRight size={40} className="bg-white rounded-full text-black max-sm:text-black" 

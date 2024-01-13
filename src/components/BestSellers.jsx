@@ -35,7 +35,8 @@ export default function NewArrivals({product}){
               <Image src={product.img} className="opacity-100  border-black border-b  bg-cover" alt="" />
             </div> 
           </div>     
-          <Link href="/prods/[productId]" as={`/prods/${product.id}`}>
+          <Link href="/prods/[productId]" as={`/prods/${product.id}`} style={{textDecoration: 'none', color: 'inherit'}}>
+            
             <div className=" flex flex-col w-[100%] font-rbt5 pl-3 max-sm:pl-0 pt-3">
               <h1 className="text-[1.3vw] max-lg:text-[1.8vw]    max-md:text-[2.2vw] max-sm:text-[15px]">
                 {product.title}

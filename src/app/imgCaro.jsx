@@ -214,7 +214,7 @@ export const prod3 =  [
     {
         id: 16,
         img: p4,
-        title: "ESSENTIAL GRAY CROP SHIRT",
+        title: "ESSENTIAL GRAY  SHIRT",
         price: 120.00
     },
     {
@@ -245,7 +245,7 @@ export const prod3 =  [
     {
         id: 18,
         img: m1,
-        title: "CLEAN BROWN COAT COVER",
+        title: "BROWN COAT COVER",
         price: 99.00
     },/*
     {

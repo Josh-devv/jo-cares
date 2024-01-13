@@ -14,10 +14,12 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import { CartContext, useCart } from "@/app/context";
 import Carts from "@/app/carts/page";
+import SignUpForm from "./register/page";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
+  const [login, setLogin] = useState(false);
 
   const contentRef = useRef(null);
   const {add, handleRemoveFromCart, totalPrice} = useContext(CartContext)
@@ -26,11 +28,14 @@ function Navbar() {
   const handleClick = () => {
     setMenu(!menu);
   };
-  const handleCart = () => {
 
-    setCart(!cart);
-    
+  const handleCart = () => {
+    setCart(!cart);   
   };
+  const handleLogin = () => {
+    setLogin(!login);   
+  };
+
   const handleScroll = () => {
     if (contentRef.current) {
         const { scrollTop } = contentRef.current;
@@ -75,11 +80,13 @@ function Navbar() {
 */
   return (
     <>
+    
       <section style={{ top: visible ? '0' : '-100px', transition: 'top 0.3s' }}
       className="h-[14vh] max-sm:h-[10vh] bg-transparent fixed w-screen z-50 bg-white text-black  px-10  border-b border-b-black flex items-center justify-center max-sm:px-5">
+         
         <div className="mr-auto flex">
         <div className="hidden max-lg:block ml-auto pr-4 cursor-pointer">
-        <Image src={men} alt=""  onClick={handleClick}/>
+          <Image src={men} alt=""  onClick={handleClick}/>
         </div>
           <Image src={logo} alt="" width={120} height={120} />
         </div>
@@ -87,16 +94,16 @@ function Navbar() {
           <Link href="/">
             <li className="flex items-center"> 
               HOME
-              <FaCaretDown />
+              
             </li>
           </Link>
           <Link href="/shop">
             <li className="flex items-center">
               SHOP
-              <FaCaretDown />
+              
             </li>
           </Link>
-          <li className="flex">LOGIN/REGISTER</li>
+          <li className="flex" onClick={handleLogin}>MY ACCOUNT</li>
         </ul>
         <div className="hidden max-lg:hidden ml-auto cursor-pointer">
         <Image src={men} alt=""  onClick={handleClick}/>
@@ -106,10 +113,7 @@ function Navbar() {
         </div>
 
         <ul className="flex ml-auto justify-between items-center font-sans gap-10 max-md:hidden max-lg:ml-0 pl-5">
-          <li className="flex text-lg">
-            <PiHeartLight className="" size={27} />
-            (0)
-          </li>
+          
           <li className="flex text-lg max-md:block">
             
             <Image src={shhop} alt="" onClick={handleCart}/>
@@ -151,7 +155,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="flex text-lg  py-3">
-            <Link href="/">
+            <Link href="/register">
               LOGIN/REGISTER
               </Link>
             </li>
@@ -164,7 +168,7 @@ function Navbar() {
           <ul    className="bg-white top-0  absolute h-screen shadow-lg right-[-100%] flex flex-col w-[40%] max-md:w-[70%] pt-7 pl-10 flex-column max-sm:w-screen max-sm:pl-5">
           <ul className="flex justify-between pt-0  border-b">
               <li className="text-2xl pb-4 font-rbt">SHOPPING CART  <span className="bg-black p-1 px-3 text-white rounded-full"> {add}</span></li>
-              <li className="pr-5 cursor-pointer">
+              <li className="pr-8 cursor-pointer">
                 <AiOutlineClose size={25} onClick={handleCart} />
               </li>
             </ul>
@@ -175,7 +179,7 @@ function Navbar() {
               
             </div>
             <div className="h-[30vh] mb-12 flex flex-col justify-end items-start">
-              <div className="text-blue flex w-[100%] mb-5 border-b text-[20px] justify-between font-rbt text-gray-600 font-semibold"><span className="">SUBTOTAL:</span> <span className="pr-5 ">${totalPrice}</span> </div>
+              <div className="text-blue flex w-[100%] mb-5 border-b text-[20px] justify-between font-rbt text-gray-600 font-semibold"><span className="">SUBTOTAL:</span> <span className="pr-8 ">${totalPrice}</span> </div>
               <div className="flex justify-between mb-3 w-[100%] ">
                 <button className="border-black  px-12 py-3 max-sm:text-[15px] max-sm:px-6 border font-rbt font-semibold">VIEW CART</button>
                 <Link href="/checkout/checkout">
@@ -185,6 +189,27 @@ function Navbar() {
               </div>
             </div>
           </ul>
+          </div>
+        </div>
+      
+        <div ref={contentRef} onScroll={handleScroll} className={login ? `types  absolute right-0 top-0 z-50` : ''}>
+          <div className="h-[100vh] w-[100%]">
+          <ul    className="bg-white top-0  absolute h-screen shadow-lg right-[-100%] flex flex-col w-[40%] max-md:w-[70%] pt-7  flex-column max-sm:w-screen max-sm:pl-5">
+          <ul className="flex justify-between pt-0  border-b">
+              <li className="text-2xl pb-4 pl-8 font-rbt">LOGIN</li>
+              <li className="pr-8 cursor-pointer">
+                <AiOutlineClose size={25} onClick={handleLogin} />
+              </li>
+            </ul>
+            <div className=" h-[100vh] overflow-y-auto">
+              <div className="">
+                <SignUpForm />
+              </div>
+              
+            </div>
+            
+          </ul>
+         
           </div>
         </div>
       

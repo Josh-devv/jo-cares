@@ -144,7 +144,10 @@ export default function Checkout({params}){
                         
                         </div>
                         </form> 
-                        <button className="bg-black text-white p-3 rounded-md mt-4">PROCEEd TO CHECKOUT</button>
+                        <Link href="/register">
+                            <button className="bg-black text-white p-3 rounded-md mt-4">PROCEED TO CHECKOUT</button>
+                        </Link>
+                        
                     </div>
                    
                    

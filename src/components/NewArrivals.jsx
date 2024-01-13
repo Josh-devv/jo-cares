@@ -96,7 +96,7 @@ export default function NewArrivals() {
 
       {/**Rendering of items in these components */}     
       <div className="flex justify-center items-center w-full flex-col">
-        <div className="w-full pt-4 ">
+        <div className="w-[85%] pt-4 ">
           {selectedComponent === "ACCESSORIES" && (
              <div className="grid grid-cols-2 max-sm:gap-x-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {prod2.map((product,  id) => (<BestSellers product={product} />))}
