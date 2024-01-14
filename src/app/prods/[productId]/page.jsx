@@ -21,6 +21,11 @@ export default function Prods({params}) {
   const { productId } = params
   const { cartItems, handleAddToCart, inc, setInc } = useContext(CartContext);
   const [showPopup, setShowPopup] = useState(false);
+  const [zoomed, setZoomed] = useState(false);
+
+  const handleImageClick2 = () => {
+    setZoomed(!zoomed);
+  };
 
 
   const togglePopup = () => {
@@ -48,9 +53,6 @@ export default function Prods({params}) {
     handleAddToCart(itemTo)
     setShowPopup(!showPopup);
 
-    setTimeout(() => {
-      setShowPopup(false);
-    }, 1000);
   }
 
   const [mainImage, setMainImage] = useState(img); // Initial main image
@@ -71,12 +73,13 @@ export default function Prods({params}) {
     <div>
       <Navbar />
      
-      <div className='h-[17vh] max-md:h-[10vh]'>
+      <div className='h-[17vh] max-md:h-[13vh] max-sm:h-[12vh]'>
           
-          <div>
-            {
+          
+      </div>
+      {
               showPopup ? (
-                <div className='fixed top-0 pt-10 w-[100%] left-1/2 text-white h-[20vh] flex justify-center items-end font-rbt transform -translate-x-1/2 -translate-y-1/2 bg-green-400 p-8 rounded shadow-md z-50'>
+                <div className='fixed   w-[100%] left-1/2 text-white flex justify-center items-end font-rbt transform -translate-x-1/2 -translate-y-1/2 bg-green-400 p-2 rounded shadow-md'>
                 <p>Item has already been to the Cart!!!</p>
               </div>
            
@@ -84,11 +87,13 @@ export default function Prods({params}) {
                 ""
               )
             }
-          </div>
-      </div>
-      <div className='h-[100%]  max-md:h-[100%] w-[100%] flex 
+      <div className='h-[100%] pt-6  max-md:h-[100%] w-[100%] flex 
           max-md:flex-col justify-evenly items-start max-md:items-center' >
+              
+          
+       
             <div className='w-[40%] max-lg:w-[50%] max-md:w-[100%] max-md:justify-center max-md:h-[100%] h-[100%]'>
+          
                  <div className=' flex max-md:w-[100%]  justify-center items-center  ' data-aos="fade-up" data-aos-duration="500">
                       <Image src={mainImage} className='obj max-md:w-[90%] max-lg:h-[70vh] max-sm:h-[70vh] h-[100vh]' data-aos="fade-up" data-aos-duration="700" />
                  </div> 

@@ -90,7 +90,7 @@ function Navbar() {
               
             </li>
           </Link>
-          <li className="flex" onClick={handleLogin}>MY ACCOUNT</li>
+          <li className="flex cursor-pointer" onClick={handleLogin}>MY ACCOUNT</li>
         </ul>
         <div className="hidden max-lg:hidden ml-auto cursor-pointer">
         <Image src={men} alt=""  onClick={handleClick}/>
