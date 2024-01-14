@@ -2,8 +2,6 @@ import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import home from "@/Assets/m1_slider_01.jpg"
-import home2 from "@/Assets/single-product1.jpg"
-import land from "@/Assets/land2.jpg"
 import land2 from "@/Assets/land.webp"
 import AOSWarapper from "@/components/AOSWarapper";
 

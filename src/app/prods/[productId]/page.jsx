@@ -149,9 +149,7 @@ export default function Prods({params}) {
 
                 <div className='flex py-7 items-center'>
                   <div className='p-2 w-[100px] flex justify-between border-black border'>
-                    <span className='text-[20px] cursor-pointer' onClick={handleDecrease}>-</span>
-                    <span className='text-[20px]'>{inc}</span>
-                    <span className='text-[20px] cursor-pointer' onClick={handleIncrease}>+</span>
+                    
                   </div>
                   <button className='font-rbt5 bg-black p-3 text-white ml-3' onClick={AddToCart}> ADD TO CART</button>
                 </div>

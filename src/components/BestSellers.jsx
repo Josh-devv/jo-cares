@@ -38,7 +38,7 @@ export default function NewArrivals({product}){
           <Link href="/prods/[productId]" as={`/prods/${product.id}`} style={{textDecoration: 'none', color: 'inherit'}}>
             
             <div className=" flex flex-col w-[100%] font-rbt5 pl-3 max-sm:pl-0 pt-3">
-              <h1 className="text-[1.3vw] max-lg:text-[1.8vw]    max-md:text-[2.2vw] max-sm:text-[15px]">
+              <h1 className="text-[1.3vw] max-lg:text-[1.8vw]    max-md:text-[2.2vw] max-sm:text-[12px]">
                 {product.title}
               </h1>
               <p className="text-[1.4vw]  max-lg:text-[1.8vw] max-md:text-[2.2vw] text-black max-sm:text-[15px]">${product.price}</p> 
