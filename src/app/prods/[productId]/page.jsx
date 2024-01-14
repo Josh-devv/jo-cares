@@ -79,7 +79,7 @@ export default function Prods({params}) {
       </div>
       {
               showPopup ? (
-                <div className='fixed   w-[100%] left-1/2 text-white flex justify-center items-end font-rbt transform -translate-x-1/2 -translate-y-1/2 bg-green-400 p-2 rounded shadow-md'>
+                <div className='fixed z-10  w-[100%] left-1/2 text-white flex justify-center items-end font-rbt transform -translate-x-1/2 -translate-y-1/2 bg-green-400 p-2 rounded shadow-md'>
                 <p>Item has already been to the Cart!!!</p>
               </div>
            
