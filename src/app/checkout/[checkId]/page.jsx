@@ -173,7 +173,7 @@ export default function Checkout({params}){
                                 <div className="flex flex-col">
                                 <div className="font-bold py-8 max-sm:py-4 flex justify-end pr-5 w-[100%]">SUBTOTAL</div>
                                 {cartItems.map((product) => (
-                                    <div className="flex pr-5 justify-end max-sm:pt-4 border-b py-8 bg-white pb-2" key={product.id}>
+                                    <div className="flex pr-5 justify-end max-sm:pt-4  py-8 bg-white pb-2" key={product.id}>
                                     <p>${product.price}</p>
                                     </div>
                                 ))}
@@ -181,10 +181,7 @@ export default function Checkout({params}){
                             </div>
                             </div>
                             <div className="flex bg-gray-400 flex-col max-lg:w-[100%] w-[80%] justify-between">
-                            <div className="pl-5 font-bold py-8 max-sm:py-4 flex justify-between bg-gray-200">
-                                <div>SUBTOTAL</div>
-                                <div className="pr-5">${totalPrice}</div>
-                            </div>
+                            
                             <div className="pl-5 font-bold py-8 max-sm:py-4 flex justify-between bg-gray-400">
                                 <div>TOTAL</div>
                                 <div className="pr-5">${totalPrice}</div>
